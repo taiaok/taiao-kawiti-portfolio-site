@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Source Code Pro', cursive;
   font-weight: 400;
 }
 
@@ -31,11 +31,11 @@ body {
 
 .overlay {
   position: absolute;
-  left: 2.5%;
-  bottom: 15%;
-  width: 95vw;
-  height: 75vh;
-  opacity: 0.3;
+  left: 0%;
+  bottom: 0%;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.4;
 }
 
 .image-container {
@@ -47,10 +47,11 @@ body {
     );
   max-width: 100%;
   height: 70vh;
-  gap: 0.4rem;
-  padding: 0.4rem;
+  gap: 0.2rem;
+  padding: 0.2rem;
   border: 1px solid;
   overflow: hidden;
+  box-shadow: 0px 1px 4px;
 }
 
 .image-container > div {
@@ -100,10 +101,18 @@ body {
   font-size: 2.1rem;
   align-self: center;
   filter: blur(0.1px);
+  border: 1px solid rgba(0, 0, 0, 0.922);
 }
 
 .name {
   font-size: 0.5rem;
-  width: 95%;
+  width: 100%;
   text-align: right;
+}
+
+.description {
+  font-size: 0.3rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  text-align: left;
 }
