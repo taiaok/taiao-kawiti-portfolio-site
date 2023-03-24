@@ -105,7 +105,6 @@
 
 .description {
   font-size: 0.4rem;
-  margin-top: 0.5rem;
   width: 100%;
   text-align: left;
 }
@@ -143,7 +142,6 @@
 
   .description {
     font-size: 0.7rem;
-    margin-top: 0.8rem;
     width: 100%;
     text-align: left;
   }
@@ -157,8 +155,8 @@
 @media screen and (min-width: 1024px) {
   .page-container {
     margin: 0 auto;
-    max-width: 60rem;
-    height: 80vh;
+    max-width: 40vw;
+    height: 85vh;
     align-self: center;
     justify-self: center;
   }
@@ -175,14 +173,15 @@
 
   .overlay {
     position: absolute;
-    left: 7%;
+    left: 27.5%;
     bottom: 1%;
-    width: 85vw;
-    height: 92vh;
+    width: 45vw;
+    height: 95vh;
   }
 
   .name {
     font-size: 0.7rem;
+    width: 40vw;
   }
 
   .description {
@@ -194,6 +193,6 @@
 
   .panel4 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
