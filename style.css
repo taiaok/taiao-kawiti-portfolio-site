@@ -7,9 +7,9 @@
 
 body {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
 }
 
 .container {
@@ -33,8 +33,8 @@ body {
   position: absolute;
   left: 0%;
   bottom: 0%;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   opacity: 0.4;
   pointer-events: none;
 }
@@ -47,16 +47,14 @@ body {
       1fr
     );
   max-width: 100%;
-  height: 70vh;
+  height: 100%;
   gap: 0.2rem;
   padding: 0.2rem;
   border: 1px solid;
-  overflow: hidden;
   box-shadow: 0px 1px 4px;
 }
 
 .image-container > div {
-  overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.922);
 }
 
@@ -68,7 +66,7 @@ body {
 .panel1 > img {
   width: auto;
   height: 100%;
-  filter: blur(1px);
+  filter: blur(2px);
 }
 
 .panel2 {
@@ -78,9 +76,9 @@ body {
 
 .panel2 > img {
   margin: 0 auto;
-  width: 80%;
+  width: auto;
   height: 100%;
-  filter: blur(1px);
+  filter: blur(2px);
 }
 
 .panel3 {
@@ -91,18 +89,22 @@ body {
 .panel3 > img {
   width: 100%;
   height: 100%;
-  filter: blur(1px);
+  filter: blur(2px);
 }
 
 .panel4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   grid-column: 3 / 5;
   color: black;
   grid-row: 4 / 5;
   text-align: center;
-  font-size: 2.1rem;
-  align-self: center;
+  font-size: 1.2rem;
+  padding: 0.5rem;
   filter: blur(0.1px);
   border: 1px solid rgba(0, 0, 0, 0.922);
+  overflow-y: scroll;
 }
 
 .name {
@@ -116,4 +118,74 @@ body {
   margin-top: 0.5rem;
   width: 100%;
   text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .page-container {
+    margin: 0 auto;
+    width: 70vw;
+    height: 90vh;
+  }
+
+  .image-container {
+    height: 80vh;
+    width: 100%;
+    gap: 0.3rem;
+    padding: 0.3rem;
+    border: 1px solid;
+    overflow: hidden;
+    box-shadow: 0px 1px 4px;
+  }
+
+  .name {
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: right;
+  }
+
+  .description {
+    font-size: 0.7rem;
+    margin-top: 0.8rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .panel4 {
+    grid-column: 3 / 5;
+    color: black;
+    grid-row: 4 / 5;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page-container {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .image-container {
+    height: 100%;
+    width: 100%;
+    gap: 0.3rem;
+    padding: 0.3rem;
+    border: 1px solid;
+    overflow: hidden;
+    box-shadow: 0px 1px 4px;
+  }
+
+  .name {
+    font-size: 0.7rem;
+  }
+
+  .description {
+    font-size: 0.78rem;
+    margin-top: 0.4rem;
+    width: 100%;
+    text-align: left;
+  }
 }
