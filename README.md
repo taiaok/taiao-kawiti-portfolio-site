@@ -1,2 +1,2 @@
 # dev-portfolio
-taiao.dev Portfolio website
+Repository for my web design portfolio site - taiao.dev
