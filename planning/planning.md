@@ -8,6 +8,13 @@
 - contact buttons at button
 - Pull from github API, live feed of what im upto? ticker kind of thing
 
+##Components
+- Navbar
+- Project box
+- Project card
+- About section
+- Live feed (implement later)
+
 ## salvaged code
 
 Social links
