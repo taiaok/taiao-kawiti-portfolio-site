@@ -1,8 +1,8 @@
 export default function NavBar() {
   return (
     <div className='navbar'>
-      <h1 className='page-heading'>Taiao Kawiti</h1>
-      <nav>
+      <h1 className='title'>Taiao Kawiti</h1>
+      <div className='navbar-links'>
         <a
           href='https://www.linkedin.com/in/taiaokawiti/'
           target='_blank'
@@ -26,12 +26,12 @@ export default function NavBar() {
             <i class='fa-solid fa-envelope'></i>
           </p>
         </a>
-        <a href='' target='_blank' rel='noreferrer'>
+        <a href='https://drive.google.com/file/d/1va-GCTMhwg_6vAmGu-SP0A97iOQlriCz/view' target='_blank' rel='noreferrer'>
           <p>
             <i class='fa-solid fa-file-pdf'></i>
           </p>
         </a>
-      </nav>
+        </div>
     </div>
   );
 }

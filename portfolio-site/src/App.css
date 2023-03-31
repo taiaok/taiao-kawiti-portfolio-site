@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 8rem;
+}
+
+.projects-section {
+    margin: 0 auto;
+    width: 80%;
+    height: 50rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+}
