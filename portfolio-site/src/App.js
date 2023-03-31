@@ -1,13 +1,17 @@
 import './App.css';
 import NavBar from './components/Navbar';
 import Projects from './components/Projects';
+import About from './components/About';
+import Hero from './components/Hero';
 
 function App() {
   return (
-  <div className='container'>
-    <NavBar/>
-    <Projects/>
-  </div>
+    <div className='container'>
+      <NavBar />
+      <Hero />
+      <Projects />
+      <About />
+    </div>
   );
 }
 
