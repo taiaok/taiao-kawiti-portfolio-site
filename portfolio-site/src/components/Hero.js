@@ -1,21 +1,31 @@
 import anime from 'animejs/lib/anime.es.js';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 const Hero = () => {
-  const loadInAnimation = () => {
-    anime({
-      targets: '.hero-section',
-      opacity: [0, 100],
-      autoplay: true,
-      duration: 500,
-      delay: anime.stagger(100),
-    });
-  };
+  useEffect(() => {
+    const loadInAnimation = () => {
+      anime({
+        targets: ['.word1', '.word2', '.word3', '.word4', '.word5'],
+        opacity: [0, 1],
+        duration: 4000,
+        delay: anime.stagger(100),
+      });
+    };
+
+    loadInAnimation();
+  }, []);
 
   return (
     <div className='hero-section'>
-      <h1 className='hero-name'>TAIAO KAWITI</h1>
-      <h2 className='hero-tagline'>Aspiring full-stack developer.</h2>
+      <h1 className='hero-name'>
+        <span className='word1'>TAIAO</span>{' '}
+        <span className='word2'>KAWITI</span>
+      </h1>
+      <h2 className='hero-tagline'>
+        <span className='word3'>Aspiring</span>{' '}
+        <span className='word4'>full-stack</span>{' '}
+        <span className='word5'>developer.</span>
+      </h2>
     </div>
   );
 };

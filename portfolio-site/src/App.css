@@ -94,3 +94,7 @@
   text-align: left;
   margin-bottom: 1rem;
 }
+
+.word1, .word2, .word3, .word4, .word5 {
+  display: inline-block
+}
