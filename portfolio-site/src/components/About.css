@@ -1,0 +1,11 @@
+.about-section {
+    scroll-snap-align: start;
+    height: 100vh;
+    padding: 2rem;
+    border: 1px solid;
+  }
+  
+  .about-title {
+    text-align: left;
+    margin-bottom: 1rem;
+  }

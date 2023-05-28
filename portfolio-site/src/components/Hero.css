@@ -1,16 +1,24 @@
 .hero-section {
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--dark-shades);
-    color: white;
-  }
-  
-  .hero-name {
-    font-size: 5rem;
-    line-height: 5rem;
-    text-align: center;
-  }
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--dark-shades);
+  color: white;
+}
+
+.hero-name {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.word1,
+.word2,
+.word3,
+.word4,
+.word5 {
+  display: inline-block;
+}

@@ -1,8 +1,8 @@
 :root {
-  --main-color: #3D3354;
-  --dark-shades: #1D131E;
-  --dark-accent: #AA485D;
-  --light-accent: #7C82A2;
+  --main-color: #011627;
+  --accent-1: #FF5D73;
+  --accent-2: #48A9A6;
+  --accent-3: #f5f1e3;
 }
 
 html {
@@ -10,26 +10,10 @@ html {
 }
 
 body {
-  background-color: var(--dark-shades);
+  background-color: var(--main-color);
+  color: white;
 }
 
 
 
 
-
-.about-section {
-  scroll-snap-align: start;
-  height: 100vh;
-  padding: 2rem;
-  border: 1px solid;
-  height: 25rem;
-}
-
-.about-title {
-  text-align: left;
-  margin-bottom: 1rem;
-}
-
-.word1, .word2, .word3, .word4, .word5 {
-  display: inline-block
-}
