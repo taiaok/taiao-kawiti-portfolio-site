@@ -1,0 +1,27 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--dark-shades);
+    color: white;
+    z-index: 1;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 10rem;
+    font-size: 1.3rem;
+  }
+  
+  i {
+    color: var(--dark-accent);
+  }
