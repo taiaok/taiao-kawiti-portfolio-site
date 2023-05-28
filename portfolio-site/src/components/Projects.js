@@ -1,4 +1,5 @@
 import Project from './Project';
+import './Projects.css';
 
 export default function Projects() {
   return (

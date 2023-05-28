@@ -5,58 +5,21 @@
   --light-accent: #7C82A2;
 }
 
-
-.projects-section {
-  margin: 1rem auto;
-  width: 100%;
-  display: grid;
-  grid-template-rows: 25rem 25rem 25rem;
-  grid-template-columns: 1fr;
-  align-items: center;
-  text-align: center;
-  row-gap: 1rem;
+html {
+  scroll-snap-type: y proximity;
 }
 
-.project-card {
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  width: 20rem;
-  border: 1px solid;
-  border-radius: 5px;
+body {
+  background-color: var(--dark-shades);
 }
 
-.project-card a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
 
-.product-image {
-  object-fit: fill;
-  height: 20rem;
-  width: 20rem;
-  margin: 0 auto;
-  filter: grayscale(0.7);
-}
 
-.image-wrap {
-  border-bottom: 1px solid;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  object-fit: cover;
-}
+
 
 .about-section {
+  scroll-snap-align: start;
+  height: 100vh;
   padding: 2rem;
   border: 1px solid;
   height: 25rem;

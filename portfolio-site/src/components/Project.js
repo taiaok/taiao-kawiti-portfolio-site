@@ -1,3 +1,5 @@
+import './Project.css';
+
 export default function Project({ image, name, url }) {
   return (
     <div className='project-card'>
