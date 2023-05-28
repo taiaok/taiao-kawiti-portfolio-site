@@ -1,3 +1,10 @@
+:root {
+  --main-color: #3D3354;
+  --dark-shades: #1D131E;
+  --dark-accent: #AA485D;
+  --light-accent: #7C82A2;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
