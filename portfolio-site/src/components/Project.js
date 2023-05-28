@@ -5,7 +5,7 @@ export default function Project({ image, name, url }) {
     <div className='project-card'>
       <a href={url} target='_blank' rel='noreferrer'>
         <div className='image-wrap'>
-          <img className='product-image' src={image} alt={name} />
+          <img className='project-image' src={image} alt={name} />
         </div>
         <div className='project-name-wrap'>
           <h3 className='project-name'>{name}</h3>
