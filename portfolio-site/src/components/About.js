@@ -4,6 +4,11 @@ export default function About() {
   return (
     <div className='about-section'>
       <h2 className='about-title'>About me</h2>
+      <img
+        src='portfolio-site/src/components/img/about-pic.jpeg'
+        alt='about'
+        className='about-picture'
+      />
       <p className='about-me-blurb'>
         Kia ora! My name is Taiao and I'm currently studying a diploma in web
         development at Developers Institute. I love to build beautiful and
