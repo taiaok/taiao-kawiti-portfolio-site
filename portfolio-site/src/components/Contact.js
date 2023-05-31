@@ -1,6 +1,7 @@
 export default function Contact() {
   return (
     <div className='contact-section'>
+        <h2>CONTACT</h2>
       <div className='social-links'>
         <a
           href='https://www.linkedin.com/in/taiaokawiti/'

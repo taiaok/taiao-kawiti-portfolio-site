@@ -15,12 +15,6 @@
   color: white;
 }
 
-.navbar-links {
-  display: flex;
-  justify-content: space-evenly;
-  width: 10rem;
-  font-size: 1.3rem;
-}
 
 i {
   color: var(--accent-2);
