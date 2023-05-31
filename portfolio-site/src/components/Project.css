@@ -1,14 +1,10 @@
 .project-card {
   display: flex;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  height: 25rem;
+  flex-direction: column;
   width: 20rem;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: var(--accent-1);
-  padding: 1rem;
+
 }
 
 .project-card a {
@@ -23,7 +19,8 @@
 
 .project-image {
   object-fit: fill;
-  height: 25rem;
+  border-radius: 20px;  
+  height: 20rem;
   width: 25rem;
   margin: 0 auto;
   filter: grayscale(0.7);

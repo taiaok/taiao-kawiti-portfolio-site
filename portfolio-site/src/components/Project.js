@@ -1,16 +1,15 @@
 import './Project.css';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-export default function Project({ image, name, url }) {
+function ProjectCard({ image, name, repourl, liveurl }) {
   return (
-    <div className='project-card'>
-      <a href={url} target='_blank' rel='noreferrer'>
-        <div className='image-wrap'>
-          <img className='project-image' src={image} alt={name} />
-        </div>
-        <div className='project-name-wrap'>
-          <h3 className='project-name'>{name}</h3>
-        </div>
-      </a>
-    </div>
+    <Card className='project-card'>
+      <Card.Img variant='top' src={image} className='project-image' />
+      <Card.Title>{name}</Card.Title>
+    </Card>
   );
 }
+
+export default ProjectCard;

@@ -1,21 +1,22 @@
-import Project from './Project';
+import ProjectCard from './Project';
 import './Projects.css';
 
 export default function Projects() {
   return (
     <div className='projects-section'>
       <h2>PROJECTS</h2>
-      <Project
+      <ProjectCard
         name='React Online Shop'
-        url='https://taiao-react-online-shop.onrender.com/'
+        liveurl='https://taiao-react-online-shop.onrender.com/'
+        repourl=''
         image={require('./img/bionicboutique.png')}
       />
-      <Project
+      <ProjectCard
         name='JS Chatbot'
         url='https://taiao-chatbot-project.onrender.com/'
         image={require('./img/chatbot.png')}
       />
-      <Project
+      <ProjectCard
         name='This website!'
         url='https://github.com/flowtyf/taiao-kawiti-portfolio-site'
         image={require('./img/personalwebsite.png')}

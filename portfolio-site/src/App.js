@@ -1,22 +1,7 @@
-import './App.css';
-import NavBar from './components/Navbar';
-import Projects from './components/Projects';
-import About from './components/About';
-import Hero from './components/Hero';
-import Contact from './components/Contact';
+import Home from './components/Home';
 
 function App() {
-  return (
-    <div className='container'>
-      <div className='content-container'>
-        <Hero />
-        <NavBar />
-        <About />
-        <Projects />
-        <Contact />
-      </div>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
