@@ -4,6 +4,7 @@ import './Projects.css';
 export default function Projects() {
   return (
     <div className='projects-section'>
+      <h2>PROJECTS</h2>
       <Project
         name='React Online Shop'
         url='https://taiao-react-online-shop.onrender.com/'

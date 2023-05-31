@@ -1,11 +1,38 @@
 .about-section {
-    scroll-snap-align: start;
-    height: 100vh;
-    padding: 2rem;
-    border: 1px solid;
-  }
-  
-  .about-title {
-    text-align: left;
-    margin-bottom: 1rem;
-  }
+  scroll-snap-align: start;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-title {
+  text-align: left;
+}
+
+.about-picture {
+  border-radius: 100%;
+  width: 50%;
+}
+
+.about-me-blurb {
+  font-size: 1.2rem;
+  background-color: var(--accent-1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dev-icon {
+  width: 60px;
+}

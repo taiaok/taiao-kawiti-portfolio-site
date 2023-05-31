@@ -7,11 +7,11 @@ import Hero from './components/Hero';
 function App() {
   return (
     <div className='container'>
-      <NavBar />
       <div className='content-container'>
         <Hero />
-        <Projects />
+        <NavBar />
         <About />
+        <Projects />
       </div>
     </div>
   );
