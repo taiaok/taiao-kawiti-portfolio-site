@@ -24,7 +24,7 @@
 .project-image {
   object-fit: fill;
   height: 25rem;
-  width: 205em;
+  width: 25rem;
   margin: 0 auto;
   filter: grayscale(0.7);
 }
