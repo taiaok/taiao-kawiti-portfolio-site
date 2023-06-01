@@ -1,5 +1,5 @@
 import anime from 'animejs/lib/anime.es.js';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import './Hero.css';
 
 const Hero = () => {
