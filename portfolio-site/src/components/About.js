@@ -3,7 +3,7 @@ import aboutPic from './img/about-pic.jpeg';
 
 export default function About() {
   return (
-    <div className='about-section'>
+    <div className='about-section' id='about'>
       <h2 className='about-title'>ABOUT</h2>
       <img src={aboutPic} alt='about' className='about-picture' />
       <p className='about-me-blurb'>

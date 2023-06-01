@@ -3,7 +3,7 @@ import './Projects.css';
 
 export default function Projects() {
   return (
-    <div className='projects-section'>
+    <div className='projects-section' id='projects'>
       <h2>PROJECTS</h2>
       <ProjectCard
         name='ONLINE SHOP'

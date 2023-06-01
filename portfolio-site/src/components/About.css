@@ -1,4 +1,5 @@
 .about-section {
+  margin-top: 2rem;
   scroll-snap-align: start;
   height: 100vh;
   padding: 2rem;
@@ -6,8 +7,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .about-title {
