@@ -48,6 +48,7 @@ export default function About() {
           alt='nodejs'
         />
       </div>
+      <div className='divider'></div>
     </div>
   );
 }

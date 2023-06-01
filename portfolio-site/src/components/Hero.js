@@ -36,7 +36,7 @@ const Hero = () => {
         options={{
           fullScreen: false,
           particles: {
-            number: { value: 30, density: { enable: true, value_area: 600 } },
+            number: { value: 20, density: { enable: true, value_area: 600 } },
             color: { value: '#ffffff' },
             shape: {
               type: 'square',
@@ -49,7 +49,7 @@ const Hero = () => {
               anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
             },
             size: {
-              value: 5,
+              value: 15,
               random: true,
               anim: { enable: false, speed: 2, size_min: 0.1, sync: false },
             },
@@ -64,16 +64,16 @@ const Hero = () => {
               enable: true,
               speed: 0.8,
               direction: 'top',
-              straight: true,
-              out_mode: 'out',
-              bounce: false,
+              straight: false,
+              out_mode: 'bounce',
+              bounce: true,
               attract: { enable: false, rotateX: 600, rotateY: 1200 },
             },
           },
           interactivity: {
             detect_on: 'canvas',
             events: {
-              onhover: { enable: false, mode: 'repulse' },
+              onhover: { enable: true, mode: 'repulse' },
               onclick: { enable: false, mode: 'push' },
               resize: true,
             },
@@ -86,7 +86,7 @@ const Hero = () => {
                 opacity: 0.8,
                 speed: 3,
               },
-              repulse: { distance: 400, duration: 0.4 },
+              repulse: { distance: 40, duration: 9000 },
               push: { particles_nb: 4 },
               remove: { particles_nb: 2 },
             },

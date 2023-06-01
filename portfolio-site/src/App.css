@@ -1,13 +1,16 @@
 :root {
   --main-color: #011627;
-  --accent-1: #012d50;
+  --accent-1: #00223d;
   --accent-2: #48a9a6;
   --accent-3: #f5f1e3;
 }
 
-
-
 body {
   background-color: var(--main-color);
   color: white;
+}
+
+.divider {
+  border-bottom: 2px solid var(--accent-1);
+  width: 40%;
 }

@@ -20,6 +20,7 @@ export default function Projects() {
         image={require('./img/personalwebsite.png')}
         description='yes'
       />
+      <div className='divider'></div>
     </div>
   );
 }
