@@ -1,13 +1,21 @@
-.card {
+.project-card {
   width: 20rem;
-  height: 10rem;
+  height: 20rem;
   background-color: var(--accent-1);
   text-align: center;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  background-color: var(--main-color);
 }
 
 .card-img-top {
   height: 20rem;
-  object-fit: cover;
+  object-fit: fill;
+  border-radius: 10px;
+  background-color: var(--main-color);
 }
 
 .card-img-overlay {
@@ -18,11 +26,9 @@
   color: white;
   font-size: 2.5rem;
   font-weight: regular;
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: var(--main-color);
 }
 
 .blur {
-  filter: blur(2px);
-  transition: filter 0.3s ease;
+  filter: blur(5px) brightness(40%);
+  transition: filter 0.5s ease;
 }

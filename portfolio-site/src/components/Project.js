@@ -3,6 +3,7 @@ import './Project.css';
 import Card from 'react-bootstrap/Card';
 import Fade from 'react-bootstrap/Fade';
 
+
 function ProjectCard({ image, name, description }) {
   const [isHovered, setHovered] = useState(false);
   const className = isHovered ? 'blur' : '';
