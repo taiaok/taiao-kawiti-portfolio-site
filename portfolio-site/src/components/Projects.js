@@ -6,7 +6,7 @@ export default function Projects() {
     <div className='projects-section'>
       <h2>PROJECTS</h2>
       <ProjectCard
-        name='REACT ONLINE SHOP'
+        name='ONLINE SHOP'
         image={require('./img/bionicboutique.png')}
         description='An ecommerce site built with react and Stripe API'
       />
@@ -16,7 +16,7 @@ export default function Projects() {
         description='yes'
       />
       <ProjectCard
-        name='THIS WEBSITE!'
+        name='PORTFOLIO SITE'
         image={require('./img/personalwebsite.png')}
         description='yes'
       />
