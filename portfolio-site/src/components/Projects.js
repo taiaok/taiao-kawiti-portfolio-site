@@ -12,7 +12,7 @@ export default function Projects() {
       />
       <ProjectCard
         name='CHATBOT'
-        image={require('./img/chatbot.png')}
+        image={require('./img/adventure-time-bmo.webp')}
         description='yes'
       />
       <ProjectCard
