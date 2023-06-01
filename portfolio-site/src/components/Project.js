@@ -4,21 +4,22 @@ import Card from 'react-bootstrap/Card';
 import Fade from 'react-bootstrap/Fade';
 
 function ProjectCard({ image, name, description }) {
-  const [fade, setFade] = useState(false);
+  const [isHovered, setHovered] = useState(false);
+  const className = isHovered ? 'blur' : '';
 
   return (
     <Card className='project-card'>
       <Card.Img
         variant='top'
         src={image}
-        className='project-image'
+        className={className}
         alt='card image'
       />
       <Card.ImgOverlay
-        onMouseEnter={() => setFade(true)}
-        onMouseLeave={() => setFade(false)}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
       >
-        <Fade in={fade}>
+        <Fade in={isHovered}>
           <Card.Text>{name}</Card.Text>
         </Fade>
       </Card.ImgOverlay>
