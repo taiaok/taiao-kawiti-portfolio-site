@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 93.9vh;
+  height: 92vh;
   background-color: var(--main-color);
   color: white;
 }
@@ -25,4 +25,10 @@
 .word4,
 .word5 {
   display: inline-block;
+}
+
+#tsparticles {
+  height: 93.9vh;
+  width: 100vw;
+  position: absolute;
 }
