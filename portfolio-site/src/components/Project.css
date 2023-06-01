@@ -1,10 +1,11 @@
 .project-card {
   width: 20rem;
-  height: 20rem;
+  height: 15rem;
   background-color: var(--accent-1);
   text-align: center;
   border: none;
   margin-bottom: 1.5rem;
+  border-radius: 20px;
 }
 
 img {
@@ -12,10 +13,10 @@ img {
 }
 
 .card-img-top {
-  height: 20rem;
-  object-fit: fill;
-  border-radius: 10px;
+  height: 15rem;
+  object-fit: cover;
   background-color: var(--main-color);
+  border-radius: 20px;
 }
 
 .card-img-overlay {
@@ -24,8 +25,8 @@ img {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 2.5rem;
-  font-weight: regular;
+  font-size: 2rem;
+  font-weight: lighter;
 }
 
 .blur {

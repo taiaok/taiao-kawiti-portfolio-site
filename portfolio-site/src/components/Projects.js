@@ -4,7 +4,7 @@ import './Projects.css';
 export default function Projects() {
   return (
     <div className='projects-section' id='projects'>
-      <h2>PROJECTS</h2>
+      <h2 className='projects-title'>PROJECTS</h2>
       <ProjectCard
         name='ONLINE SHOP'
         image={require('./img/bionicboutique.png')}

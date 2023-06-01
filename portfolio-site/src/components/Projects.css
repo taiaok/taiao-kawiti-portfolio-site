@@ -9,3 +9,12 @@
   gap: 1rem;
   background-color: var(--main-color);
 }
+
+.projects-title {
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+
+#projects {
+  scroll-margin-top: 80px;
+}
