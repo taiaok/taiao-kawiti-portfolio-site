@@ -1,13 +1,12 @@
 .about-section {
   margin-top: 3rem;
-  scroll-snap-align: start;
-  height: 70rem;
-  padding: 2rem;
+  height: 100vh;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   margin-bottom: 3rem;
 }
 
@@ -26,7 +25,8 @@
   font-size: 1.2rem;
   font-weight: 400;
   background-color: var(--accent-1);
-  padding: 1rem;
+  box-shadow: 0 0 15px 15px var(--main-color) inset;
+  padding: 2rem;
   border-radius: 10px;
 }
 

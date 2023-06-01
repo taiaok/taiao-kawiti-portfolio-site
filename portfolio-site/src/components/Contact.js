@@ -2,7 +2,7 @@ import './Contact.css';
 export default function Contact() {
   return (
     <div className='contact-section' id='contact'>
-      <h2>CONTACT</h2>
+      <h2 className="contact-title">CONTACT</h2>
       <p>
         Whether you have a question, a collaboration proposal, or just want to
         say hello, feel free to reach out to me via email or Linkedin.

@@ -5,7 +5,8 @@
   text-align: center;
   border: none;
   margin-bottom: 1.5rem;
-  border-radius: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px var(--accent-1);
 }
 
 img {
@@ -16,7 +17,7 @@ img {
   height: 15rem;
   object-fit: cover;
   background-color: var(--main-color);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .card-img-overlay {
@@ -31,5 +32,11 @@ img {
 
 .blur {
   filter: blur(5px) brightness(40%);
-  transition: filter 0.5s ease;
+  transform: scale(1.04);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.shadow {
+  box-shadow: none;
+  transition: box-shadow 0.5s ease;
 }

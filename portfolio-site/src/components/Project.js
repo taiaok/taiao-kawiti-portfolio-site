@@ -3,17 +3,17 @@ import './Project.css';
 import Card from 'react-bootstrap/Card';
 import Fade from 'react-bootstrap/Fade';
 
-
 function ProjectCard({ image, name, description }) {
   const [isHovered, setHovered] = useState(false);
-  const className = isHovered ? 'blur' : '';
+  const blurClass = isHovered ? 'blur' : '';
+  const shadowClass = isHovered ? 'shadow' : '';
 
   return (
-    <Card className='project-card'>
+    <Card className={`project-card ${shadowClass}`}>
       <Card.Img
         variant='top'
         src={image}
-        className={className}
+        className={blurClass}
         alt='card image'
       />
       <Card.ImgOverlay

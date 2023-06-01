@@ -5,9 +5,9 @@
   --accent-3: #f5f1e3;
 }
 
+
+
 body {
   background-color: var(--main-color);
   color: white;
 }
-
-
