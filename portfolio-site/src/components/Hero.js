@@ -17,7 +17,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='hero-section'>
+    <div className='hero-section' id='hero'>
       <h1 className='hero-name'>
         <span className='word1'>TAIAO</span>{' '}
         <span className='word2'>KAWITI</span>

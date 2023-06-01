@@ -1,18 +1,24 @@
 .navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
   width: 100%;
-  padding: 0.5rem;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  padding: 0.5rem 1rem;
   background-color: var(--accent-1);
 }
 
-.title {
+.nav-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-brand {
   font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+a.navbar-brand:hover {
   color: white;
 }
 
