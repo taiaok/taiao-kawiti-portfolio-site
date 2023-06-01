@@ -5,13 +5,7 @@
   --accent-3: #f5f1e3;
 }
 
-html {
-  scroll-snap-type: y proximity;
-}
-
 body {
   background-color: var(--main-color);
   color: white;
 }
-
-
