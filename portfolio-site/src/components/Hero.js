@@ -29,6 +29,7 @@ const Hero = () => {
 
   return (
     <div className='hero-section' id='hero'>
+      {/*tsParticle hero animation configuration*/}
       <Particles
         id='tsparticles'
         init={particlesInit}
