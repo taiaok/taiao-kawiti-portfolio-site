@@ -1,0 +1,17 @@
+:root {
+  --main-color: #011627;
+  --accent-1: #012d50;
+  --accent-2: #48a9a6;
+  --accent-3: #f5f1e3;
+}
+
+html {
+  scroll-snap-type: y proximity;
+}
+
+body {
+  background-color: var(--main-color);
+  color: white;
+}
+
+

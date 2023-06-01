@@ -31,6 +31,12 @@ export default function About() {
         />
 
         <img
+          className='dev-icon react'
+          src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+          alt='react'
+        />
+
+        <img
           className='dev-icon nodejs'
           src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg'
           alt='nodejs'

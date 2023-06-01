@@ -6,20 +6,19 @@ export default function Projects() {
     <div className='projects-section'>
       <h2>PROJECTS</h2>
       <ProjectCard
-        name='React Online Shop'
-        liveurl='https://taiao-react-online-shop.onrender.com/'
-        repourl=''
+        name='REACT ONLINE SHOP'
         image={require('./img/bionicboutique.png')}
+        description='An ecommerce site built with react and Stripe API'
       />
       <ProjectCard
-        name='JS Chatbot'
-        url='https://taiao-chatbot-project.onrender.com/'
+        name='CHATBOT'
         image={require('./img/chatbot.png')}
+        description='yes'
       />
       <ProjectCard
-        name='This website!'
-        url='https://github.com/flowtyf/taiao-kawiti-portfolio-site'
+        name='THIS WEBSITE!'
         image={require('./img/personalwebsite.png')}
+        description='yes'
       />
     </div>
   );

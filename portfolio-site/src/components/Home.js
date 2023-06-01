@@ -7,14 +7,12 @@ import Contact from './Contact';
 
 function Home() {
   return (
-    <div className='container'>
-      <div className='content-container'>
-        <Hero />
-        <NavBar />
-        <About />
-        <Projects />
-        <Contact />
-      </div>
+    <div className='content-container'>
+      <Hero />
+      <NavBar />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   );
 }
