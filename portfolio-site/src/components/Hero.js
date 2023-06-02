@@ -5,7 +5,7 @@ import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 
-const Hero = () => {
+export default function Hero() {
   useEffect(() => {
     const loadInAnimation = () => {
       anime({
@@ -109,6 +109,4 @@ const Hero = () => {
       </div> */}
     </div>
   );
-};
-
-export default Hero;
+}

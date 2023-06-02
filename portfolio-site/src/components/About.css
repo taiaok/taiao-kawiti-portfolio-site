@@ -1,4 +1,5 @@
 .about-section {
+  scroll-snap-align: top;
   margin-top: 3rem;
   height: 100vh;
   padding: 1rem;
@@ -12,20 +13,20 @@
 
 .about-title {
   font-weight: lighter;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
 .about-picture {
   border-radius: 100%;
-  width: 40%;
+  width: 8rem;
 }
 
 .about-me-blurb {
   font-size: 1.2rem;
   font-weight: 400;
   background-color: var(--accent-1);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
 }
 

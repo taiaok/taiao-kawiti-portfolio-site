@@ -5,7 +5,7 @@ import About from './About';
 import Hero from './Hero';
 import Contact from './Contact';
 
-function Home() {
+export default function Home() {
   return (
     <div className='content-container'>
       <Hero />
@@ -16,5 +16,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 
-function NavBar() {
+export default function NavBar() {
   return (
     <>
       <Navbar sticky='top'>
@@ -17,5 +17,3 @@ function NavBar() {
     </>
   );
 }
-
-export default NavBar;
