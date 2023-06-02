@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-1);
+}
+
+.nav-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: lighter;
+}
+
+a.navbar-brand:hover {
+  color: white;
+}
+
+i {
+  color: var(--accent-2);
+}

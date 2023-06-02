@@ -1,0 +1,50 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.hero-name {
+  font-size: 5rem;
+  font-weight: 350;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.hero-tagline {
+  font-weight: lighter;
+}
+
+.word1,
+.word2,
+.word3,
+.word4,
+.word5 {
+  display: inline-block;
+}
+
+.hero-nav {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+}
+
+.hero-nav h3 {
+  font-size: 1rem;
+}
+
+#tsparticles {
+  height: 93.9vh;
+  width: 100vw;
+  position: absolute;
+}

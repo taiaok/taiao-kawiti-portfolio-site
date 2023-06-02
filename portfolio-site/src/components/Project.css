@@ -1,0 +1,42 @@
+.project-card {
+  width: 20rem;
+  height: 15rem;
+  background-color: var(--accent-1);
+  text-align: center;
+  border: none;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--accent-1);
+}
+
+img {
+  background-color: var(--main-color);
+}
+
+.card-img-top {
+  height: 15rem;
+  object-fit: cover;
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.blur {
+  filter: blur(5px) brightness(40%);
+  transform: scale(1.04);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.shadow {
+  box-shadow: none;
+  transition: box-shadow 0.5s ease;
+}
