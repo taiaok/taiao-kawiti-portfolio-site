@@ -27,21 +27,7 @@
   display: inline-block;
 }
 
-.hero-nav {
-  display: flex;
-  gap: 1rem;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
-  position: absolute;
-  top: 70%;
-  width: 100%;
-}
 
-.hero-nav h3 {
-  font-size: 1rem;
-}
 
 #tsparticles {
   height: 93.9vh;

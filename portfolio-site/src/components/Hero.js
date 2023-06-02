@@ -4,6 +4,7 @@ import './Hero.css';
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import arrow from './img/down-arrow.svg';
 
 export default function Hero() {
   useEffect(() => {
@@ -104,9 +105,11 @@ export default function Hero() {
         <span className='word4'>full-stack</span>{' '}
         <span className='word5'>developer.</span>
       </h2>
-      {/* <div className='hero-nav'>
-        <h3>ABOUT</h3>
-      </div> */}
+      <div className='arrow-nav-container'>
+        <a href='#about'>
+          <img src={arrow} alt='arrow' className='nav-arrow' />
+        </a>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import './About.css';
 import aboutPic from './img/about-pic.jpeg';
+import arrow from './img/down-arrow.svg';
 // TODO: add github ticker "what ive been up to"
 export default function About() {
   return (
@@ -48,6 +49,7 @@ export default function About() {
           alt='nodejs'
         />
       </div>
+
       <div className='divider'></div>
     </div>
   );
