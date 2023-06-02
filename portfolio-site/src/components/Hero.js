@@ -87,7 +87,7 @@ const Hero = () => {
                 opacity: 0.8,
                 speed: 3,
               },
-              repulse: { distance: 40, duration: 9000 },
+              repulse: { distance: 400, duration: 1 },
               push: { particles_nb: 4 },
               remove: { particles_nb: 2 },
             },
@@ -104,6 +104,9 @@ const Hero = () => {
         <span className='word4'>full-stack</span>{' '}
         <span className='word5'>developer.</span>
       </h2>
+      {/* <div className='hero-nav'>
+        <h3>ABOUT</h3>
+      </div> */}
     </div>
   );
 };
