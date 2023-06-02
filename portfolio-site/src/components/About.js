@@ -1,6 +1,6 @@
 import './About.css';
 import aboutPic from './img/about-pic.jpeg';
-
+// TODO: add github ticker "what ive been up to"
 export default function About() {
   return (
     <div className='about-section' id='about'>

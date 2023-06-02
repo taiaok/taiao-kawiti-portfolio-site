@@ -14,3 +14,25 @@ body {
   border-bottom: 2px solid var(--accent-1);
   width: 40%;
 }
+
+@media screen and (min-width: 768px) {
+  .divider {
+    width: 15rem;
+  }
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 43rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .about-picture {
+    width: 12rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-me-blurb {
+    width: 35rem;
+  }
+}
