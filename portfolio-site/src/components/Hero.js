@@ -1,5 +1,5 @@
 import anime from 'animejs/lib/anime.es.js';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect } from 'react';
 import './Hero.css';
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
@@ -7,7 +7,6 @@ import { loadFull } from 'tsparticles';
 import arrow from './img/down-arrow.svg';
 import 'animate.css';
 import { motion } from 'framer-motion';
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Hero() {
   const particlesInit = useCallback(async (engine) => {
