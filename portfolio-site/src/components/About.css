@@ -41,3 +41,7 @@
 .dev-icon {
   width: 50px;
 }
+
+#about {
+  scroll-margin-top: 30px;
+}

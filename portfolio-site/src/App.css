@@ -56,4 +56,12 @@ body {
     width: 35rem;
     font-size: 1.5rem;
   }
+
+  #projects {
+    scroll-margin-top: 0;
+  }
+
+  #about {
+    scroll-margin-top: 0;
+  }
 }
