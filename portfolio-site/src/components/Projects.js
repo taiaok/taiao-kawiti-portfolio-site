@@ -15,13 +15,13 @@ export default function Projects() {
       >
         <h2 className='projects-title'>PROJECTS</h2>
       </AnimationOnScroll>
-      <div className='projects-container'>
-        <AnimationOnScroll
-          animateIn='animate__fadeInLeft'
-          animatePreScroll={false}
-          animateOnce={true}
-          duration={1}
-        >
+      <AnimationOnScroll
+        animateIn='animate__fadeInLeft'
+        animatePreScroll={false}
+        animateOnce={true}
+        duration={1}
+      >
+        <div className='projects-container'>
           <ProjectCard
             name='ONLINE SHOP'
             image={require('./img/bionicboutique.png')}
@@ -44,9 +44,8 @@ export default function Projects() {
             image={require('./img/personalwebsite.png')}
             description='yes'
           />
-        </AnimationOnScroll>
-      </div>
-
+        </div>
+      </AnimationOnScroll>
       <div className='divider'></div>
     </div>
   );

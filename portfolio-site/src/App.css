@@ -44,12 +44,16 @@ body {
     align-items: center;
   }
 
+  .about-title {
+    font-size: 3rem;
+  }
   .about-picture {
-    width: 12rem;
+    width: 13rem;
     margin-bottom: 1rem;
   }
 
   .about-me-blurb {
     width: 35rem;
+    font-size: 1.5rem;
   }
 }

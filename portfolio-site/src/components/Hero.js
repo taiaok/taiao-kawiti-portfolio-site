@@ -5,6 +5,8 @@ import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import arrow from './img/down-arrow.svg';
+import 'animate.css';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Hero() {
   useEffect(() => {
@@ -105,9 +107,10 @@ export default function Hero() {
         <span className='word4'>full-stack</span>{' '}
         <span className='word5'>developer.</span>
       </h2>
+
       <div className='arrow-nav-container'>
         <a href='#about'>
-          <img src={arrow} alt='arrow' className='nav-arrow' />
+            <img src={arrow} alt='arrow' className='nav-arrow' />
         </a>
       </div>
     </div>
