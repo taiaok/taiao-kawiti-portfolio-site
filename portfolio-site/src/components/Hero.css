@@ -33,7 +33,8 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+  position: absolute;
+  top: 90%;
 }
 
 .nav-arrow {

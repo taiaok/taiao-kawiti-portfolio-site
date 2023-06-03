@@ -24,9 +24,10 @@ export default function About() {
         </AnimationOnScroll>
         <img src={aboutPic} alt='about' className='about-picture' />
         <p className='about-me-blurb'>
-          Kia ora! My name is Taiao and I'm currently studying a diploma in web
-          development at Developers Institute NZ. I love to build beautiful and
-          functional websites and am looking for a full-stack development role.
+          Kia ora! I'm Taiao, a beginner web developer and student at Developers
+          Institute NZ. I absolutely love what I do! Currently, I'm seeking
+          full-stack development roles to further hone my skills. When I'm not
+          coding, I love to read, work out, and listen to (or make) music.
         </p>
         <AnimationOnScroll
           animateIn='animate__fadeInLeft'

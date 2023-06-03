@@ -34,7 +34,7 @@ export default function Hero() {
   const arrowClickAnimation = () => {
     anime({
       targets: '.nav-arrow',
-      translateY: '100px',
+      translateY: '20px',
       duration: 800,
       direction: 'alternate',
     });
