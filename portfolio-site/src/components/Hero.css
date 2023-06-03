@@ -27,6 +27,20 @@
   display: inline-block;
 }
 
+.arrow-nav-container {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.nav-arrow {
+  width: 3rem;
+  opacity: 0.4;
+}
+
 #tsparticles {
   height: 93.9vh;
   width: 100vw;

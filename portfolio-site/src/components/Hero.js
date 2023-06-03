@@ -1,5 +1,5 @@
 import anime from 'animejs/lib/anime.es.js';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './Hero.css';
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
@@ -9,6 +9,14 @@ import 'animate.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Hero() {
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
+
   useEffect(() => {
     const loadInAnimation = () => {
       anime({
@@ -22,13 +30,14 @@ export default function Hero() {
     loadInAnimation();
   }, []);
 
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
+  const arrowClickAnimation = () => {
+    anime({
+      targets: '.nav-arrow',
+      translateY: ['50px', '-50px'],
+      duration: 1,
+      delay: anime.stagger(100),
+    });
+  };
 
   return (
     <div className='hero-section' id='hero'>
@@ -108,9 +117,9 @@ export default function Hero() {
         <span className='word5'>developer.</span>
       </h2>
 
-      <div className='arrow-nav-container'>
+      <div className='arrow-nav-container' onClick={arrowClickAnimation}>
         <a href='#about'>
-            <img src={arrow} alt='arrow' className='nav-arrow' />
+          <img src={arrow} alt='arrow' className='nav-arrow' />
         </a>
       </div>
     </div>

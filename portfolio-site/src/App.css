@@ -15,22 +15,7 @@ body {
   width: 40%;
 }
 
-.arrow-nav-container {
-  display: flex;
-  gap: 1rem;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
-  position: absolute;
-  top: 80%;
-  width: 100%;
-}
 
-.nav-arrow {
-  width: 3rem;
-  opacity: 0.4;
-}
 
 @media screen and (min-width: 768px) {
   .divider {
