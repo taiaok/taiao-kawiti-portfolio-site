@@ -1,11 +1,12 @@
 import anime from 'animejs/lib/anime.es.js';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Hero.css';
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import arrow from './img/down-arrow.svg';
 import 'animate.css';
+import { motion } from 'framer-motion';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Hero() {
@@ -118,9 +119,11 @@ export default function Hero() {
       </h2>
 
       <div className='arrow-nav-container' onClick={arrowClickAnimation}>
-        <a href='#about'>
-          <img src={arrow} alt='arrow' className='nav-arrow' />
-        </a>
+        <motion.span whileHover={{ scale: 1.02, y: 15 }}>
+          <a href='#about'>
+            <img src={arrow} alt='arrow' className='nav-arrow' />
+          </a>
+        </motion.span>
       </div>
     </div>
   );
