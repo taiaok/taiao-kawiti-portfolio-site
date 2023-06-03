@@ -1,6 +1,7 @@
 import './Contact.css';
 import 'animate.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { motion } from 'framer-motion';
 export default function Contact() {
   return (
     <AnimationOnScroll
@@ -16,30 +17,42 @@ export default function Contact() {
           say hello, feel free to reach out to me via email or Linkedin.
         </p>
         <div className='social-links'>
-          <a
+          <motion.a
             href='https://www.linkedin.com/in/taiaokawiti/'
             target='_blank'
             rel='noreferrer'
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <i className='fa-brands fa-linkedin'></i>
-          </a>
-          <a href='https://github.com/flowtyf' target='_blank' rel='noreferrer'>
+          </motion.a>
+          <motion.a
+            href='https://github.com/flowtyf'
+            target='_blank'
+            rel='noreferrer'
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <i className='fa-brands fa-github'></i>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href='mailto:taiaokawiti@protonmail.com'
             target='_blank'
             rel='noreferrer'
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <i className='fa-solid fa-envelope'></i>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href='https://drive.google.com/file/d/1va-GCTMhwg_6vAmGu-SP0A97iOQlriCz/view'
             target='_blank'
             rel='noreferrer'
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <i className='fa-solid fa-file-pdf'></i>
-          </a>
+          </motion.a>
         </div>
       </div>
     </AnimationOnScroll>
