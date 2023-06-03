@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9c0ddd20.css",
+    "main.js": "/static/js/main.ea4321c4.js",
+    "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
+    "static/media/bionicboutique.png": "/static/media/bionicboutique.56a6a5c4737c715b31a1.png",
+    "static/media/personalwebsite.png": "/static/media/personalwebsite.b4474edbc89324ddd29c.png",
+    "static/media/about-pic.jpeg": "/static/media/about-pic.39bff8cd9babf0745219.jpeg",
+    "static/media/adventure-time-bmo.webp": "/static/media/adventure-time-bmo.d0d23e4f99b15eaf38f1.webp",
+    "index.html": "/index.html",
+    "static/media/down-arrow.svg": "/static/media/down-arrow.eef86cac1e49bd951823470036361390.svg",
+    "main.9c0ddd20.css.map": "/static/css/main.9c0ddd20.css.map",
+    "main.ea4321c4.js.map": "/static/js/main.ea4321c4.js.map",
+    "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c0ddd20.css",
+    "static/js/main.ea4321c4.js"
+  ]
+}
