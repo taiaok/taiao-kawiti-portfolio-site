@@ -52,7 +52,7 @@ function ProjectCard({
         fullscreen='xxl-down'
       >
         <Modal.Header closeButton>
-          <Modal.Title>{modalName}</Modal.Title>
+          <Modal.Title>{selectedProject}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {description}

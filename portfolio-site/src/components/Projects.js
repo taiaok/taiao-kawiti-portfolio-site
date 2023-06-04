@@ -2,22 +2,10 @@ import ProjectCard from './Project';
 import './Projects.css';
 import 'animate.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { Modal, Button } from 'react-bootstrap';
-import { useState } from 'react';
+import { motion } from 'framer-motion';
+import arrow from './img/down-arrow.svg';
 
 export default function Projects() {
-  const [showModal, setShowModal] = useState(false);
-  const [selectedProject, setSelectedProject] = useState(null);
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
-
-  const handleOpenModal = (project) => {
-    setSelectedProject(project);
-    setShowModal(true);
-  };
-
   return (
     <div className='projects-section' id='projects'>
       <AnimationOnScroll

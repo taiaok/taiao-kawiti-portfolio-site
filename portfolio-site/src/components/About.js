@@ -1,8 +1,9 @@
 import './About.css';
 import 'animate.css';
+import arrow from './img/down-arrow.svg';
 import aboutPic from './img/about-pic.jpeg';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-
+import { motion } from 'framer-motion';
 // TODO: add github ticker "what ive been up to"
 export default function About() {
   return (
@@ -76,6 +77,13 @@ export default function About() {
         </AnimationOnScroll>
 
         <div className='divider'></div>
+        <div className='arrow-nav-container'>
+          <motion.span whileHover={{ scale: 1.02, y: 15 }}>
+            <a href='#projects'>
+              <img src={arrow} alt='arrow' className='nav-arrow' />
+            </a>
+          </motion.span>
+        </div>
       </div>
     </AnimationOnScroll>
   );

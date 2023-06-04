@@ -51,6 +51,10 @@ img {
   gap: 2rem;
 }
 
+.modal-btn {
+  background-color: var(--accent-1);
+}
+
 .modal-btn-container {
   width: 100%;
   display: flex;
