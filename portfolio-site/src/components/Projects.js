@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import ProjectCard from './Project';
 import './Projects.css';
 import 'animate.css';
@@ -40,13 +42,13 @@ export default function Projects() {
           <ProjectCard
             name='JS CALCULATOR'
             image={require('./img/jscalc.webp')}
-            description='yes'
+            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend turpis vel pulvinar aliquam. Proin dictum diam eu lacus tempor, sed tempus nunc ullamcorper. Nunc sed fermentum nulla.'
           />
 
           <ProjectCard
             name='PLACEHOLDER PROJECT'
             image={require('./img/personalwebsite.png')}
-            description='yes'
+            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend turpis vel pulvinar aliquam. Proin dictum diam eu lacus tempor, sed tempus nunc ullamcorper. Nunc sed fermentum nulla.'
           />
         </div>
       </AnimationOnScroll>

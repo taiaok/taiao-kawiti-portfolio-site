@@ -7,10 +7,12 @@
   align-items: center;
   gap: 1rem;
   margin-bottom: 3rem;
+  background-color: var(--main-color);
+  color: white;
 }
 
 .about-title {
-  font-weight: lighter;
+  font-weight: 200;
   font-size: 2rem;
   text-align: center;
 }
@@ -22,7 +24,7 @@
 
 .about-me-blurb {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   background-color: var(--accent-1);
   padding: 1rem;
   border-radius: 10px;
@@ -43,4 +45,19 @@
 
 #about {
   scroll-margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-size: 3rem;
+  }
+  .about-picture {
+    width: 13rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-me-blurb {
+    width: 35rem;
+    font-size: 1.5rem;
+  }
 }

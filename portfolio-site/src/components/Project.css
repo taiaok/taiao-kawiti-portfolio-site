@@ -46,7 +46,13 @@ img {
 }
 
 .modal-header {
-  border-bottom: 3px solid var(--accent-1);
+  border-bottom: none;
+  background-color: var(--accent-1);
+}
+
+.modal-title {
+  font-weight: 200;
+  font-size: 1.5rem;
 }
 
 .modal-footer {
@@ -56,11 +62,18 @@ img {
 .modal-body {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  font-weight: 250;
+  font-size: 1.1rem;
+  gap: 1rem;
 }
 
 .modal-btn {
   background-color: var(--accent-1);
+  border: none;
+}
+
+.modal-btn-close {
+  background-color: rgb(45, 45, 45);
   border: none;
 }
 
@@ -69,37 +82,27 @@ img {
 }
 
 .carousel-item {
-  height: 18rem;
+  height: 14rem;
 }
 
 img.carousel-item-img {
+  height: fit-content;
   object-fit: fill;
+}
+
+.btn:hover {
+  background-color: var(--accent-2);
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
   .modal-body {
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-  }
-
-  .modal-body p {
-    width: 40rem;
-    font-size: 1.2rem;
-  }
-
-  .project-carousel {
-    width: 40rem;
-    height: 30rem;
-    margin: 0 auto;
+    font-size: 1.4rem;
   }
 
   .carousel-item {
-    width: 40rem;
     height: 30rem;
-  }
-  .btn:hover {
-    background-color: var(--accent-2);
-    border: none;
   }
 }

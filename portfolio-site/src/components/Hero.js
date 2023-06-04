@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import './Hero.css';
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';

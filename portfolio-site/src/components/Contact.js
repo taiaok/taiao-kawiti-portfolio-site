@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import './Contact.css';
 import 'animate.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';

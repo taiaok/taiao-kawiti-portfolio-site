@@ -1,8 +1,6 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
   padding: 0.5rem 1rem;
   background-color: var(--accent-1);
 }
@@ -10,18 +8,26 @@
 .nav-container {
   display: flex;
   gap: 1rem;
+  color: white;
 }
 
 .navbar-brand {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: white;
-  font-weight: lighter;
+  font-weight: 200;
+}
+
+.navbar-toggler {
+  color: white;
+  background-color: white;
 }
 
 a.navbar-brand:hover {
   color: white;
 }
 
-i {
-  color: var(--accent-2);
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+    font-size: 2rem;
+  }
 }

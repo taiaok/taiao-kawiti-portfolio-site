@@ -10,13 +10,13 @@
 
 .hero-name {
   font-size: 5rem;
-  font-weight: lighter;
+  font-weight: 200;
   line-height: 5rem;
   text-align: center;
 }
 
 .hero-tagline {
-  font-weight: lighter;
+  font-weight: 200;
 }
 
 .word1,

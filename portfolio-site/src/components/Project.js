@@ -1,8 +1,16 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import { useState } from 'react';
 import './Project.css';
 import Card from 'react-bootstrap/Card';
 import Fade from 'react-bootstrap/Fade';
-import { Modal, Button, Carousel, CarouselItem } from 'react-bootstrap';
+import {
+  Modal,
+  Button,
+  Carousel,
+  CarouselItem,
+  CloseButton,
+} from 'react-bootstrap';
 
 function ProjectCard({
   image,
@@ -51,10 +59,11 @@ function ProjectCard({
         onHide={handleCloseModal}
         centered
         size='lg'
-        fullscreen='xxl-down'
+        fullscreen='md-down'
       >
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title>{selectedProject}</Modal.Title>
+          <CloseButton variant='white' onClick={handleCloseModal} />
         </Modal.Header>
         <Modal.Body>
           <p>{description}</p>
@@ -83,11 +92,12 @@ function ProjectCard({
           </Carousel>
         </Modal.Body>
         <Modal.Footer>
+          {' '}
           <Button href={liveUrl} target='_blank' className='modal-btn'>
             Live Demo
           </Button>
           <Button className='modal-btn'>Github Repo</Button>
-          <Button onClick={handleCloseModal} className='modal-btn'>
+          <Button onClick={handleCloseModal} className='modal-btn-close'>
             Close
           </Button>
         </Modal.Footer>

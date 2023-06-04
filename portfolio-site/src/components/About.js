@@ -1,6 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import './About.css';
 import 'animate.css';
-
 import aboutPic from './img/about-pic.jpeg';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
