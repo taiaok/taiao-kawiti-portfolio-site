@@ -34,7 +34,7 @@ export default function Projects() {
           <ProjectCard
             name='CHATBOT'
             image={require('./img/adventure-time-bmo.webp')}
-            description='yes'
+            description='This project was a part of my studies, where I created a chatbot that offers personalized video game recommendations. I designed the chatbots flow, reply logic, and handled edge cases to ensure a seamless user experience.  '
           />
 
           <ProjectCard

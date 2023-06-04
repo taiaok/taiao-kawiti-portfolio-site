@@ -57,16 +57,28 @@ function ProjectCard({
           <Modal.Title>{selectedProject}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {description}
+          <p>{description}</p>
           <Carousel className='project-carousel' fade>
             <CarouselItem>
-              <img className='carousel-item-img' src={image} alt='project carousel 1' />
+              <img
+                className='carousel-item-img'
+                src={image}
+                alt='project carousel 1'
+              />
             </CarouselItem>
             <CarouselItem>
-              <img className='carousel-item-img' src={image2} alt='project carousel 2' />
+              <img
+                className='carousel-item-img'
+                src={image2}
+                alt='project carousel 2'
+              />
             </CarouselItem>
             <CarouselItem>
-              <img className='carousel-item-img' src={image3} alt='project carousel 3' />
+              <img
+                className='carousel-item-img'
+                src={image3}
+                alt='project carousel 3'
+              />
             </CarouselItem>
           </Carousel>
         </Modal.Body>

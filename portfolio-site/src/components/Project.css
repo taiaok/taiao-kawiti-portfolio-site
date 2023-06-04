@@ -56,7 +56,7 @@ img {
 .modal-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  gap: 2rem;
 }
 
 .modal-btn {
@@ -71,7 +71,35 @@ img {
 .carousel-item {
   height: 18rem;
 }
+
 img.carousel-item-img {
   object-fit: fill;
-  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-body {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .modal-body p {
+    width: 40rem;
+    font-size: 1.2rem;
+  }
+
+  .project-carousel {
+    width: 40rem;
+    height: 30rem;
+    margin: 0 auto;
+  }
+
+  .carousel-item {
+    width: 40rem;
+    height: 30rem;
+  }
+  .btn:hover {
+    background-color: var(--accent-2);
+    border: none;
+  }
 }
