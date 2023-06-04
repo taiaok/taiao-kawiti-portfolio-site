@@ -1,4 +1,3 @@
-import anime from 'animejs/lib/anime.es.js';
 import { useEffect } from 'react';
 import './Hero.css';
 import { useCallback } from 'react';
@@ -16,22 +15,8 @@ export default function Hero() {
     await console.log(container);
   }, []);
 
-  useEffect(() => {
-    const loadInAnimation = () => {
-      anime({
-        targets: ['.word1', '.word2', '.word3', '.word4', '.word5'],
-        opacity: [0, 1],
-        duration: 16000,
-        delay: anime.stagger(100),
-      });
-    };
-
-    loadInAnimation();
-  }, []);
-
   return (
     <div className='hero-section' id='hero'>
-      {/*tsParticle hero animation configuration*/}
       <Particles
         id='tsparticles'
         init={particlesInit}
@@ -39,7 +24,7 @@ export default function Hero() {
         options={{
           fullScreen: false,
           particles: {
-            number: { value: 20, density: { enable: true, value_area: 600 } },
+            number: { value: 15, density: { enable: true, value_area: 600 } },
             color: { value: '#ffffff' },
             shape: {
               type: 'square',
@@ -65,11 +50,11 @@ export default function Hero() {
             },
             move: {
               enable: true,
-              speed: 0.8,
+              speed: 0.6,
               direction: 'top',
               straight: false,
-              out_mode: 'bounce',
-              bounce: true,
+              out_mode: 'out',
+              bounce: false,
               attract: { enable: false, rotateX: 600, rotateY: 1200 },
             },
           },
@@ -89,7 +74,7 @@ export default function Hero() {
                 opacity: 0.8,
                 speed: 3,
               },
-              repulse: { distance: 400, duration: 1 },
+              repulse: { distance: 200, duration: 1000 },
               push: { particles_nb: 4 },
               remove: { particles_nb: 2 },
             },
