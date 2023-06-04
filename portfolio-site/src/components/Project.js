@@ -56,14 +56,15 @@ function ProjectCard({
         </Modal.Header>
         <Modal.Body>
           {description}
-          <div className='modal-btn-container'>
-            <Button className='modal-btn'>Live Demo</Button>
-            <Button className='modal-btn'>Github Repo</Button>
-            <Button onClick={handleCloseModal} className='modal-btn'>
-              Close
-            </Button>
-          </div>
+          <div className='modal-btn-container'></div>
         </Modal.Body>
+        <Modal.Footer>
+          <Button className='modal-btn'>Live Demo</Button>
+          <Button className='modal-btn'>Github Repo</Button>
+          <Button onClick={handleCloseModal} className='modal-btn'>
+            Close
+          </Button>
+        </Modal.Footer>
       </Modal>
     </Card>
   );
