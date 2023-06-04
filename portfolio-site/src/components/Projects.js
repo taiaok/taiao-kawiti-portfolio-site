@@ -25,8 +25,9 @@ export default function Projects() {
           <ProjectCard
             name='REACT ONLINE SHOP'
             modalName='REACT ONLINE SHOP (BIONIC BOUTIQUE)'
-            image={require('./img/bionicboutique.png')}
+            image={require('./img/bionicboutique.webp')}
             image2={require('./img/bionicboutique2.webp')}
+            image3={require('./img/bionicboutique3.webp')}
             liveUrl='https://taiao-react-online-shop.onrender.com/'
             description='Bionic Boutique is a sleek and modern online shop built using React.  I handled all aspects of the UI design and planning, and implemented integration with the Stripe API for secure payment processing. The shop allows customers to browse products, sort and filter products by category/date, and easily make purchases.'
           />
