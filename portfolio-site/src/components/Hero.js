@@ -5,7 +5,6 @@ import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import arrow from './img/down-arrow.svg';
-import 'animate.css';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
@@ -29,15 +28,6 @@ export default function Hero() {
 
     loadInAnimation();
   }, []);
-
-  const arrowClickAnimation = () => {
-    anime({
-      targets: '.nav-arrow',
-      translateY: '20px',
-      duration: 800,
-      direction: 'alternate',
-    });
-  };
 
   return (
     <div className='hero-section' id='hero'>
@@ -117,7 +107,7 @@ export default function Hero() {
         <span className='word5'>developer.</span>
       </h2>
 
-      <div className='arrow-nav-container' onClick={arrowClickAnimation}>
+      <div className='arrow-nav-container'>
         <motion.span whileHover={{ scale: 1.02, y: 15 }}>
           <a href='#about'>
             <img src={arrow} alt='arrow' className='nav-arrow' />
