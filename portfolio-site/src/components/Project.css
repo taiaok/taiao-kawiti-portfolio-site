@@ -40,3 +40,20 @@ img {
   box-shadow: none;
   transition: box-shadow 0.5s ease;
 }
+
+.modal-content {
+  background-color: var(--main-color);
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
