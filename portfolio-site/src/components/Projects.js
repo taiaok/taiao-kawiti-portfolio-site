@@ -34,8 +34,8 @@ export default function Projects() {
           />
 
           <ProjectCard
-            name='PORTFOLIO SITE'
-            image={require('./img/personalwebsite.png')}
+            name='JS CALCULATOR'
+            image={require('./img/jscalc.webp')}
             description='yes'
           />
 
