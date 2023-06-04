@@ -44,7 +44,7 @@ export default function Projects() {
           <ProjectCard
             name='JS CALCULATOR'
             image={require('./img/jscalc.webp')}
-            description='A straightforward and simple project that performs basic arithmetic: multiplication, subtraction, division, and addition. It also supports decimal point calculations for more precise computations.The functional coding is done in JavaScript, with CSS used for its visual style. I also explored the addition of sound effects using DOM, adding a bit of fun and auditory feedback to the user experience.'
+            description='A straightforward and simple project that performs basic arithmetic. It also supports decimal point calculations for more precise computations.The functional coding is done in JavaScript, with CSS used for its visual style. I also explored the addition of sound effects using DOM, adding a bit of fun and auditory feedback to the user experience.'
           />
 
           <ProjectCard
