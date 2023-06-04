@@ -1,5 +1,4 @@
 .about-section {
-  scroll-snap-align: top;
   height: 100vh;
   padding: 1rem;
   display: flex;

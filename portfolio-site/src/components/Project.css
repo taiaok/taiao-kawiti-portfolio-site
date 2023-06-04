@@ -53,6 +53,7 @@ img {
 
 .modal-btn {
   background-color: var(--accent-1);
+  border: none;
 }
 
 .modal-btn-container {
