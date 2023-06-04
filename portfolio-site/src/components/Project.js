@@ -96,7 +96,9 @@ function ProjectCard({
           <Button href={liveUrl} target='_blank' className='modal-btn'>
             Live Demo
           </Button>
-          <Button className='modal-btn'>Github Repo</Button>
+          <Button href={repoUrl} target='_blank' className='modal-btn'>
+            Github Repo
+          </Button>
           <Button onClick={handleCloseModal} className='modal-btn-close'>
             Close
           </Button>

@@ -26,18 +26,18 @@ export default function Projects() {
       >
         <div className='projects-container'>
           <ProjectCard
-            name='REACT ONLINE SHOP'
-            modalName='REACT ONLINE SHOP (BIONIC BOUTIQUE)'
+            name='BIONIC BOUTIQUE'
             image={require('./img/bionicboutique.webp')}
             image2={require('./img/bionicboutique2.webp')}
             image3={require('./img/bionicboutique3.webp')}
             liveUrl='https://taiao-react-online-shop.onrender.com/'
-            description='Bionic Boutique is a contemporary, visually pleasing online storefront that I built using React.I handled all aspects of the UI design and planning, and implemented integration with the Stripe API for secure payment processing. The shop allows customers to browse products, sort and filter products by category/date, and easily make purchases.'
+            description='Bionic Boutique is a contemporary, visually pleasing online storefront that I built using React. I handled all aspects of the UI design and planning, and implemented integration with the Stripe API for secure payment processing. The shop allows customers to browse products, sort and filter products by category/date, and easily make purchases.'
           />
           <ProjectCard
             name='CHATBOT'
             image={require('./img/adventure-time-bmo.webp')}
             liveUrl='https://taiao-chatbot-project.onrender.com'
+            repoUrl='https://github.com/flowtyf/DI-Chatbot-project'
             description='During my current studies, for a project I put together a chatbot that suggests video games based on personal tastes. I focused on making sure its conversations flow naturally, its responses make sense, and it can handle any unusual situations to give users a hassle-free experience.'
           />
 
