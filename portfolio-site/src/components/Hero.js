@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import './Hero.css';
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
@@ -15,8 +14,24 @@ export default function Hero() {
     await console.log(container);
   }, []);
 
+  const variants = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+    transition: {
+      when: 'beforeChildren',
+      staggerChildren: 3,
+      duration: 5,
+    },
+  };
+
   return (
-    <div className='hero-section' id='hero'>
+    <motion.div
+      className='hero-section'
+      id='hero'
+      initial='hidden'
+      animate='visible'
+      variants={variants}
+    >
       <Particles
         id='tsparticles'
         init={particlesInit}
@@ -83,13 +98,13 @@ export default function Hero() {
         }}
       />
       <h1 className='hero-name'>
-        <span className='word1'>TAIAO</span>{' '}
-        <span className='word2'>KAWITI</span>
+        <motion.span className='word1'>TAIAO</motion.span>{' '}
+        <motion.span className='word2'>KAWITI</motion.span>
       </h1>
       <h2 className='hero-tagline'>
-        <span className='word3'>Aspiring</span>{' '}
-        <span className='word4'>full-stack</span>{' '}
-        <span className='word5'>developer.</span>
+        <motion.span className='word3'>Aspiring</motion.span>{' '}
+        <motion.span className='word4'>full-stack</motion.span>{' '}
+        <motion.span className='word5'>developer.</motion.span>
       </h2>
 
       <div className='arrow-nav-container'>
@@ -99,6 +114,6 @@ export default function Hero() {
           </a>
         </motion.span>
       </div>
-    </div>
+    </motion.div>
   );
 }
