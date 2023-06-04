@@ -12,12 +12,13 @@
 
 .contact-title {
   font-weight: 200;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
 .contact-section p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 200;
 }
 
 .social-links {
@@ -28,4 +29,17 @@
 
 i {
   color: var(--accent-2);
+}
+
+@media screen and (min-width: 768px) {
+  .contact-title {
+    font-weight: 200;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .contact-section p {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
 }

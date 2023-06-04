@@ -16,6 +16,7 @@ export default function Projects() {
         offset={100}
       >
         <h2 className='projects-title'>PROJECTS</h2>
+        <div className='divider'></div>
       </AnimationOnScroll>
       <AnimationOnScroll
         animateIn='animate__fadeInLeft'
@@ -36,6 +37,7 @@ export default function Projects() {
           <ProjectCard
             name='CHATBOT'
             image={require('./img/adventure-time-bmo.webp')}
+            liveUrl='https://taiao-chatbot-project.onrender.com'
             description='This project was a part of my studies, where I created a chatbot that offers personalized video game recommendations. I designed the chatbots flow, reply logic, and handled edge cases to ensure a seamless user experience.  '
           />
 

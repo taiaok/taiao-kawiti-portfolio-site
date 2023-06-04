@@ -11,27 +11,14 @@ body {
 }
 
 .divider {
-  border-bottom: 2px solid var(--accent-1);
-  width: 40%;
+  border-bottom: 3px solid var(--accent-1);
+  width: 10rem;
+  margin: 0 auto;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .divider {
     width: 15rem;
-  }
-  .projects-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 43rem;
-    justify-items: center;
-    align-items: center;
-  }
-
-
-  #projects {
-    scroll-margin-top: 0;
   }
 
   #about {

@@ -23,8 +23,9 @@ export default function About() {
           delay={3}
         >
           <h2 className='about-title'>ABOUT</h2>
+          <div className='divider'></div>
         </AnimationOnScroll>
-        <img src={aboutPic} alt='about' className='about-picture' />
+
         <p className='about-me-blurb'>
           Kia ora! I'm Taiao, a beginner web developer and student at Developers
           Institute NZ. I absolutely love what I do! Currently, I'm seeking
@@ -76,8 +77,6 @@ export default function About() {
             />
           </div>
         </AnimationOnScroll>
-
-        <div className='divider'></div>
       </div>
     </AnimationOnScroll>
   );

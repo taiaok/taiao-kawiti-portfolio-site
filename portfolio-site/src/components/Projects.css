@@ -11,9 +11,29 @@
 
 .projects-title {
   font-weight: 200;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 #projects {
   scroll-margin-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-title {
+    font-weight: 200;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 43rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #projects {
+    scroll-margin-top: 0;
+  }
 }
