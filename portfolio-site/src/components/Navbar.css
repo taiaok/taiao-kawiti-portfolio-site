@@ -1,14 +1,13 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
   padding: 0.5rem 1rem;
   background-color: var(--accent-1);
+  color: white;
 }
 
 .nav-container {
   display: flex;
   gap: 1rem;
-  color: white;
+  margin-left: 1rem;
 }
 
 .navbar-brand {
@@ -17,17 +16,32 @@
   font-weight: 200;
 }
 
-.navbar-toggler {
+a.navbar-brand:hover {
   color: white;
-  background-color: white;
 }
 
-a.navbar-brand:hover {
+.nav-link {
+  color: white;
+}
+
+a.nav-link.active {
   color: white;
 }
 
 @media screen and (min-width: 768px) {
   .navbar-brand {
     font-size: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
