@@ -56,9 +56,13 @@ img {
   border: none;
 }
 
-.modal-btn-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
+.project-carousel {
+  border-radius: 10px;
+}
+
+.carousel-item {
+  height: 20rem;
+}
+.carousel-item-img {
+  object-fit: cover;
 }

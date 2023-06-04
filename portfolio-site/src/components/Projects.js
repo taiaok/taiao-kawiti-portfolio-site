@@ -2,8 +2,6 @@ import ProjectCard from './Project';
 import './Projects.css';
 import 'animate.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { motion } from 'framer-motion';
-import arrow from './img/down-arrow.svg';
 
 export default function Projects() {
   return (
@@ -28,6 +26,8 @@ export default function Projects() {
             name='REACT ONLINE SHOP'
             modalName='REACT ONLINE SHOP (BIONIC BOUTIQUE)'
             image={require('./img/bionicboutique.png')}
+            image2={require('./img/bionicboutique2.webp')}
+            liveUrl='https://taiao-react-online-shop.onrender.com/'
             description='Bionic Boutique is a sleek and modern online shop built using React.  I handled all aspects of the UI design and planning, and implemented integration with the Stripe API for secure payment processing. The shop allows customers to browse products, sort and filter products by category/date, and easily make purchases.'
           />
           <ProjectCard

@@ -2,10 +2,12 @@ import { useState } from 'react';
 import './Project.css';
 import Card from 'react-bootstrap/Card';
 import Fade from 'react-bootstrap/Fade';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, Carousel, CarouselItem } from 'react-bootstrap';
 
 function ProjectCard({
   image,
+  image2,
+  image3,
   name,
   modalName,
   description,
@@ -56,10 +58,22 @@ function ProjectCard({
         </Modal.Header>
         <Modal.Body>
           {description}
-          <div className='modal-btn-container'></div>
+          <Carousel className='project-carousel' fade>
+            <CarouselItem>
+              <img className='carousel-item-img' src={image} alt='project carousel 1' />
+            </CarouselItem>
+            <CarouselItem>
+              <img className='carousel-item-img' src={image2} alt='project carousel 2' />
+            </CarouselItem>
+            <CarouselItem>
+              <img className='carousel-item-img' src={image3} alt='project carousel 3' />
+            </CarouselItem>
+          </Carousel>
         </Modal.Body>
         <Modal.Footer>
-          <Button className='modal-btn'>Live Demo</Button>
+          <Button href={liveUrl} target='_blank' className='modal-btn'>
+            Live Demo
+          </Button>
           <Button className='modal-btn'>Github Repo</Button>
           <Button onClick={handleCloseModal} className='modal-btn'>
             Close
