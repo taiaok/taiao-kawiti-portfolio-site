@@ -27,10 +27,10 @@ export default function About() {
         </AnimationOnScroll>
 
         <p className='about-me-blurb'>
-          Kia ora! I'm Taiao, a beginner web developer and student at Developers
-          Institute NZ. I absolutely love what I do! Currently, I'm seeking
-          full-stack development roles to further hone my skills. When I'm not
-          coding, I love to read, work out, and listen to (or make) music.
+          Hey! I'm Taiao, a web developer studying at Developers Institute NZ
+          and having a blast doing it. Right now, I'm looking for full-stack
+          development roles to level up my skills. When the code settles, you'll
+          find me reading, at the gym, and listening to (or making) music.
         </p>
         <AnimationOnScroll
           animateIn='animate__fadeInLeft'

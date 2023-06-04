@@ -32,19 +32,19 @@ export default function Projects() {
             image2={require('./img/bionicboutique2.webp')}
             image3={require('./img/bionicboutique3.webp')}
             liveUrl='https://taiao-react-online-shop.onrender.com/'
-            description='Bionic Boutique is a sleek and modern online shop built using React.  I handled all aspects of the UI design and planning, and implemented integration with the Stripe API for secure payment processing. The shop allows customers to browse products, sort and filter products by category/date, and easily make purchases.'
+            description='Bionic Boutique is a contemporary, visually pleasing online storefront that I built using React.I handled all aspects of the UI design and planning, and implemented integration with the Stripe API for secure payment processing. The shop allows customers to browse products, sort and filter products by category/date, and easily make purchases.'
           />
           <ProjectCard
             name='CHATBOT'
             image={require('./img/adventure-time-bmo.webp')}
             liveUrl='https://taiao-chatbot-project.onrender.com'
-            description='This project was a part of my studies, where I created a chatbot that offers personalized video game recommendations. I designed the chatbots flow, reply logic, and handled edge cases to ensure a seamless user experience.  '
+            description='During my current studies, for a project I put together a chatbot that suggests video games based on personal tastes. I focused on making sure its conversations flow naturally, its responses make sense, and it can handle any unusual situations to give users a hassle-free experience.'
           />
 
           <ProjectCard
             name='JS CALCULATOR'
             image={require('./img/jscalc.webp')}
-            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend turpis vel pulvinar aliquam. Proin dictum diam eu lacus tempor, sed tempus nunc ullamcorper. Nunc sed fermentum nulla.'
+            description='A straightforward and simple project that performs basic arithmetic: multiplication, subtraction, division, and addition. It also supports decimal point calculations for more precise computations.The functional coding is done in JavaScript, with CSS used for its visual style. I also explored the addition of sound effects using DOM, adding a bit of fun and auditory feedback to the user experience.'
           />
 
           <ProjectCard

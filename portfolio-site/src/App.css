@@ -12,6 +12,7 @@ body {
 
 .divider {
   border-bottom: 3px solid var(--accent-1);
+  margin-bottom: 1rem;
   width: 10rem;
   margin: 0 auto;
 }
