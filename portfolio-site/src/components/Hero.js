@@ -15,12 +15,12 @@ export default function Hero() {
   }, []);
 
   const variants = {
-    visible: { opacity: 1 },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -100 },
     transition: {
       when: 'beforeChildren',
-      staggerChildren: 3,
-      duration: 5,
+      delayChildren: 9,
+      duration: 50,
     },
   };
 
@@ -98,17 +98,27 @@ export default function Hero() {
         }}
       />
       <h1 className='hero-name'>
-        <motion.span className='word1'>TAIAO</motion.span>{' '}
-        <motion.span className='word2'>KAWITI</motion.span>
+        <motion.span variants={variants} className='word1'>
+          TAIAO
+        </motion.span>{' '}
+        <motion.span variants={variants} className='word2'>
+          KAWITI
+        </motion.span>
       </h1>
       <h2 className='hero-tagline'>
-        <motion.span className='word3'>Aspiring</motion.span>{' '}
-        <motion.span className='word4'>full-stack</motion.span>{' '}
-        <motion.span className='word5'>developer.</motion.span>
+        <motion.span variants={variants} className='word3'>
+          Aspiring
+        </motion.span>{' '}
+        <motion.span variants={variants} className='word4'>
+          full-stack
+        </motion.span>{' '}
+        <motion.span variants={variants} className='word5'>
+          developer.
+        </motion.span>
       </h2>
 
       <div className='arrow-nav-container'>
-        <motion.span whileHover={{ scale: 1.02, y: 15 }}>
+        <motion.span variants={variants} whileHover={{ scale: 1.02, y: 15 }}>
           <a href='#about'>
             <img src={arrow} alt='arrow' className='nav-arrow' />
           </a>
