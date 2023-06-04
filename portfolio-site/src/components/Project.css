@@ -48,7 +48,7 @@ img {
 .modal-body {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: space-evenly;
 }
 
 .modal-btn {
@@ -56,13 +56,14 @@ img {
   border: none;
 }
 
-.project-carousel {
+.carousel-inner {
   border-radius: 10px;
 }
 
 .carousel-item {
   height: 20rem;
 }
-.carousel-item-img {
-  object-fit: cover;
+img.carousel-item-img {
+  object-fit: fill;
+  border-radius: 10px;
 }
