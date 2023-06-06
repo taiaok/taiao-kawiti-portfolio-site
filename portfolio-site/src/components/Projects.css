@@ -37,3 +37,30 @@
     scroll-margin-top: 0;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .projects-title {
+    font-weight: 200;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .projects-container {
+    display: flex;
+    min-width: 55rem;
+    max-width: 65rem;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .projects-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--main-color);
+  }
+}

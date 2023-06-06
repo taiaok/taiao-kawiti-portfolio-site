@@ -8,17 +8,15 @@ import { Navbar, Nav } from 'react-bootstrap';
 export default function NavBar() {
   return (
     <Navbar
-      className='m-auto'
       inverse
       collapseOnSelect
       expand='lg'
       sticky='top'
       variant='dark'
+      className='justify-content-center'
     >
       <motion.span whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
-        <Navbar.Brand className='mx-auto' href='#hero'>
-          TAIAO KAWITI
-        </Navbar.Brand>
+        <Navbar.Brand href='#hero'>TAIAO KAWITI</Navbar.Brand>
       </motion.span>
       <Navbar.Toggle
         className='navbar-hamburger'
