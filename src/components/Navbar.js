@@ -7,23 +7,13 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 export default function NavBar() {
   return (
-    <Navbar
-      inverse
-      collapseOnSelect
-      expand='md'
-      sticky='top'
-      variant='dark'
-      className='justify-content-center'
-    >
+    <Navbar inverse collapseOnSelect expand='md' sticky='top' variant='dark'>
       <Navbar.Toggle
         className='navbar-hamburger'
         aria-controls='basic-navbar-nav'
       ></Navbar.Toggle>
       <Navbar.Collapse className='nav-container' id='basic-navbar-nav'>
         <Nav className='justify-content-center' style={{ flex: 1 }}>
-          <motion.span whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
-            <Navbar.Brand href='#hero'>TAIAO KAWITI</Navbar.Brand>
-          </motion.span>
           <motion.span whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
             <Nav.Link href='#about'>ABOUT</Nav.Link>
           </motion.span>
