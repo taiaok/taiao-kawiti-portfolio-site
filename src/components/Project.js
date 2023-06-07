@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/js/bootstrap.min';
 import { useState } from 'react';
 import './Project.css';
-import Card from 'react-bootstrap/Card';
-import Fade from 'react-bootstrap/Fade';
+import Card from 'react-bootstrap/esm/Card';
+import Fade from 'react-bootstrap/esm/Fade';
 import {
   Modal,
   Button,
