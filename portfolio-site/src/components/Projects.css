@@ -46,8 +46,7 @@
   }
   .projects-container {
     display: flex;
-    min-width: 55rem;
-    max-width: 65rem;
+    width: 60rem;
     justify-items: center;
     align-items: center;
     gap: 1rem;

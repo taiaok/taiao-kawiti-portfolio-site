@@ -82,7 +82,7 @@ img {
 }
 
 .carousel-item {
-  height: 14rem;
+  height: 20rem;
 }
 
 img.carousel-item-img {
@@ -102,6 +102,6 @@ img.carousel-item-img {
   }
 
   .carousel-item {
-    height: 20rem;
+    height: 25rem;
   }
 }
