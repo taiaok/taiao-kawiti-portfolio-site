@@ -13,7 +13,7 @@
 .navbar-brand {
   font-size: 1.3rem;
   color: white;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 a.navbar-brand:hover {
@@ -33,15 +33,16 @@ a.nav-link.active {
     font-size: 2rem;
   }
 
+  .navbar-nav {
+    align-items: center;
+  }
+
   .nav-link {
     font-size: 1.2rem;
+    align-self: center;
+    justify-self: center;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .navbar-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }

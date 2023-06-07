@@ -47,11 +47,11 @@ export default function Projects() {
           repoUrl='https://github.com/flowtyf/JS-Calculator'
           liveUrl='https://flowtyf.github.io/JS-Calculator/'
         />
-        <ProjectCard
+        {/* <ProjectCard
           name='RESERVATIONIZER'
           image={require('./img/personalwebsite.png')}
           description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend turpis vel pulvinar aliquam. Proin dictum diam eu lacus tempor, sed tempus nunc ullamcorper. Nunc sed fermentum nulla.'
-        />
+        /> */}
       </AnimationOnScroll>
       <div className='divider'></div>
     </div>
