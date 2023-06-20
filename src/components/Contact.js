@@ -45,7 +45,7 @@ export default function Contact() {
             <i className='fa-solid fa-envelope'></i>
           </motion.a>
           <motion.a
-            href='https://drive.google.com/file/d/1va-GCTMhwg_6vAmGu-SP0A97iOQlriCz/view'
+            href='https://rxresu.me/taiao35/taiao-kawiti-cv'
             target='_blank'
             rel='noreferrer'
             whileHover={{ scale: 1.1 }}
