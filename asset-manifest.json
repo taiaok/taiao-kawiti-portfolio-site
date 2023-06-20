@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.72ccef65.css",
-    "main.js": "/static/js/main.d8b12f07.js",
+    "main.js": "/static/js/main.08dbb8ab.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
     "static/media/bionicboutique.webp": "/static/media/bionicboutique.56a6a5c4737c715b31a1.webp",
     "static/media/bionicboutique2.webp": "/static/media/bionicboutique2.3919893bdb09169fcca1.webp",
@@ -12,11 +12,11 @@
     "index.html": "/index.html",
     "static/media/down-arrow.svg": "/static/media/down-arrow.eef86cac1e49bd951823470036361390.svg",
     "main.72ccef65.css.map": "/static/css/main.72ccef65.css.map",
-    "main.d8b12f07.js.map": "/static/js/main.d8b12f07.js.map",
+    "main.08dbb8ab.js.map": "/static/js/main.08dbb8ab.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72ccef65.css",
-    "static/js/main.d8b12f07.js"
+    "static/js/main.08dbb8ab.js"
   ]
 }
