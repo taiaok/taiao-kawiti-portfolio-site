@@ -1,11 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-import './Hero.css';
-import { useCallback } from 'react';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import arrow from './img/down-arrow.svg';
-import { motion } from 'framer-motion';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "./Hero.css";
+import { useCallback } from "react";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import arrow from "./img/down-arrow.svg";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const particlesInit = useCallback(async (engine) => {
@@ -20,7 +20,7 @@ export default function Hero() {
     visible: { opacity: 1, x: 0 },
     hidden: { opacity: 0, x: -100 },
     transition: {
-      when: 'beforeChildren',
+      when: "beforeChildren",
       delayChildren: 9,
       duration: 50,
     },
@@ -28,24 +28,24 @@ export default function Hero() {
 
   return (
     <motion.div
-      className='hero-section'
-      id='hero'
-      initial='hidden'
-      animate='visible'
+      className="hero-section"
+      id="hero"
+      initial="hidden"
+      animate="visible"
       variants={variants}
     >
       <Particles
-        id='tsparticles'
+        id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
           fullScreen: false,
           particles: {
             number: { value: 15, density: { enable: true, value_area: 600 } },
-            color: { value: '#ffffff' },
+            color: { value: "#ffffff" },
             shape: {
-              type: 'square',
-              stroke: { width: 0, color: '#000000' },
+              type: "square",
+              stroke: { width: 0, color: "#000000" },
               polygon: { nb_sides: 5 },
             },
             opacity: {
@@ -61,25 +61,25 @@ export default function Hero() {
             line_linked: {
               enable: false,
               distance: 300,
-              color: '#ffffff',
+              color: "#ffffff",
               opacity: 0,
               width: 0,
             },
             move: {
               enable: true,
               speed: 0.6,
-              direction: 'top',
+              direction: "top",
               straight: false,
-              out_mode: 'out',
+              out_mode: "out",
               bounce: false,
               attract: { enable: false, rotateX: 600, rotateY: 1200 },
             },
           },
           interactivity: {
-            detect_on: 'canvas',
+            detect_on: "canvas",
             events: {
-              onhover: { enable: true, mode: 'repulse' },
-              onclick: { enable: false, mode: 'push' },
+              onhover: { enable: true, mode: "repulse" },
+              onclick: { enable: false, mode: "push" },
               resize: true,
             },
             modes: {
@@ -99,30 +99,30 @@ export default function Hero() {
           retina_detect: true,
         }}
       />
-      <h1 className='hero-name'>
-        <motion.span variants={variants} className='word1'>
+      <h1 className="hero-name">
+        <motion.span variants={variants} className="word1">
           TAIAO
-        </motion.span>{' '}
-        <motion.span variants={variants} className='word2'>
+        </motion.span>{" "}
+        <motion.span variants={variants} className="word2">
           KAWITI
         </motion.span>
       </h1>
-      <h2 className='hero-tagline'>
-        <motion.span variants={variants} className='word3'>
-          Aspiring
-        </motion.span>{' '}
-        <motion.span variants={variants} className='word4'>
+      <h2 className="hero-tagline">
+        <motion.span variants={variants} className="word3">
+          Pretty good
+        </motion.span>{" "}
+        <motion.span variants={variants} className="word4">
           full-stack
-        </motion.span>{' '}
-        <motion.span variants={variants} className='word5'>
+        </motion.span>{" "}
+        <motion.span variants={variants} className="word5">
           developer.
         </motion.span>
       </h2>
 
-      <div className='arrow-nav-container'>
+      <div className="arrow-nav-container">
         <motion.span variants={variants} whileHover={{ scale: 1.02, y: 15 }}>
-          <a href='#about'>
-            <img src={arrow} alt='arrow' className='nav-arrow' />
+          <a href="#about">
+            <img src={arrow} alt="arrow" className="nav-arrow" />
           </a>
         </motion.span>
       </div>
