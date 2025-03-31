@@ -24,13 +24,11 @@ export default function About() {
           <h2 className="about-title">ABOUT</h2>
           <div className="divider"></div>
         </AnimationOnScroll>
-
         <p className="about-me-blurb">
-          Kia ora! I'm Taiao. When I'm
-          not on the tools, you'll find me paddling (Waka Ama), at the gym, and
-          listening to (or making) music.
+          <p>Kia ora! I'm Taiao, a software developer currently working as a Technology Graduate at BNZ.</p>
+          <p>This portfolio is more of a placeholder for now. The projects contained don't exactly reflect where I'm at.</p>
+          I'm modernizing the spaghetti code here in my spare time, running <code> npm audit fix --force</code>, and building new things. Stay tuned!
         </p>
-
         <AnimationOnScroll
           animateIn="animate__fadeInLeft"
           animateOnce={true}
@@ -44,6 +42,13 @@ export default function About() {
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
               alt="js"
             />
+
+            <img
+              className="dev-icon js"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+              alt="react"
+            />
+          
             <img
               className="dev-icon html5"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
