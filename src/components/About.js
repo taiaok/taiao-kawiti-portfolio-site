@@ -26,10 +26,11 @@ export default function About() {
         </AnimationOnScroll>
 
         <p className="about-me-blurb">
-          Kia ora! I'm Taiao, a software developer at Flick Electric. When I'm
+          Kia ora! I'm Taiao. When I'm
           not on the tools, you'll find me paddling (Waka Ama), at the gym, and
           listening to (or making) music.
         </p>
+
         <AnimationOnScroll
           animateIn="animate__fadeInLeft"
           animateOnce={true}
@@ -39,14 +40,9 @@ export default function About() {
         >
           <div className="tech-stack">
             <img
-              className="dev-icon html5"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg"
-              alt="rails"
-            />
-            <img
-              className="dev-icon html5"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-plain.svg"
-              alt="rails"
+              className="dev-icon js"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+              alt="js"
             />
             <img
               className="dev-icon html5"
@@ -59,9 +55,14 @@ export default function About() {
               alt="css3"
             />
             <img
-              className="dev-icon js"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-              alt="js"
+              className="dev-icon rails"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg"
+              alt="rails"
+            />
+            <img
+              className="dev-icon ruby"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-plain.svg"
+              alt="rails"
             />
           </div>
         </AnimationOnScroll>
