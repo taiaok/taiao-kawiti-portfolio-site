@@ -37,15 +37,15 @@ export default function Projects() {
           name='CHATBOT'
           image={require('./img/adventure-time-bmo.webp')}
           liveUrl='https://taiao-chatbot-project.onrender.com'
-          repoUrl='https://github.com/flowtyf/DI-Chatbot-project'
+          repoUrl='https://github.com/taiaok/DI-Chatbot-project'
           description='For this project I put together a chatbot that suggests video games based on personal tastes. I focused on making sure its conversations flow naturally, its responses make sense, and it has robust handling of edge cases.'
         />
         <ProjectCard
           name='JS CALCULATOR'
           image={require('./img/jscalc.webp')}
           description='A simple implementation of a calculator that performs basic arithmetic. It also supports decimal point calculations for more precise computations.The functional coding is done in JavaScript and it is styled with basic CSS. I also explored the addition of sound effects using DOM, adding a bit of fun and auditory feedback to the user experience.'
-          repoUrl='https://github.com/flowtyf/JS-Calculator'
-          liveUrl='https://flowtyf.github.io/JS-Calculator/'
+          repoUrl='https://github.com/taiaok/JS-Calculator'
+          liveUrl='https://taiaok.github.io/JS-Calculator/'
         />
         {/* <ProjectCard
           name='RESERVATIONIZER'

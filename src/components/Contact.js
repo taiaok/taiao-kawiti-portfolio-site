@@ -27,7 +27,7 @@ export default function Contact() {
             <i className='fa-brands fa-linkedin'></i>
           </motion.a>
           <motion.a
-            href='https://github.com/flowtyf'
+            href='https://github.com/taiaok'
             target='_blank'
             rel='noreferrer'
             whileHover={{ scale: 1.1 }}
