@@ -606,7 +606,18 @@
           gap: 1.25rem;
         }
         .hero-name {
+          font-size: clamp(1.75rem, 8vw, 3rem);
           letter-spacing: -0.03em;
+        }
+        .activity-meta {
+          display: block;
+          margin-top: 0.25rem;
+        }
+        .contact-entry {
+          overflow-wrap: anywhere;
+        }
+        .about-grid > div:last-child {
+          justify-self: start;
         }
       }
     </style>
@@ -863,7 +874,7 @@
           const verb = VERBS[Math.floor(Math.random() * VERBS.length)];
           const repo = latest.repo.name.replace("taiaok/", "");
           const url = "https://github.com/" + latest.repo.name;
-          bodyEl.innerHTML = `last spotted ${verb} <a class="activity-repo" href="${url}" target="_blank" rel="noreferrer">${repo}</a> · <span class="activity-time">${timeAgo(latest.created_at)}</span>`;
+          bodyEl.innerHTML = `last spotted ${verb} <a class="activity-repo" href="${url}" target="_blank" rel="noreferrer">${repo}</a><span class="activity-meta"> · <span class="activity-time">${timeAgo(latest.created_at)}</span></span>`;
         } catch {
           const VERBS = [
             "debugging",
@@ -872,7 +883,7 @@
             "working on",
           ];
           const verb = VERBS[Math.floor(Math.random() * VERBS.length)];
-          bodyEl.innerHTML = `last spotted ${verb} <a class="activity-repo" href="https://github.com/taiaok/taiao-kawiti-portfolio-site" target="_blank" rel="noreferrer">taiao-kawiti-portfolio-site</a> · <span class="activity-time">3d ago</span>`;
+          bodyEl.innerHTML = `last spotted ${verb} <a class="activity-repo" href="https://github.com/taiaok/taiao-kawiti-portfolio-site" target="_blank" rel="noreferrer">taiao-kawiti-portfolio-site</a><span class="activity-meta"> · <span class="activity-time">3d ago</span></span>`;
         }
       })();
     </script>
