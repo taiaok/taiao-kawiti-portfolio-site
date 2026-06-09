@@ -68,7 +68,7 @@
       }
 
       .container {
-        max-width: 860px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 0 2rem;
       }
@@ -92,7 +92,7 @@
       }
 
       .nav-inner {
-        max-width: 860px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 0.9rem 2rem;
         display: flex;
@@ -164,13 +164,15 @@
       /* ─── HERO ───────────────────────────────────────────────── */
       #hero {
         align-items: flex-start;
-        padding-top: 14vh;
+        padding-top: 8vh;
       }
 
       @media (max-width: 639px) {
         #hero {
-          align-items: center;
-          padding-top: 6rem;
+          align-items: flex-start;
+          min-height: auto;
+          padding-top: 3rem;
+          padding-bottom: 3rem;
         }
         .nav-links {
           gap: 1.25rem;
@@ -191,6 +193,16 @@
           display: none;
         }
         .contact-entry {
+          overflow-wrap: anywhere;
+        }
+        .dir-listing {
+          width: 100%;
+          font-size: 0.78rem;
+        }
+        .dir-row {
+          grid-template-columns: 1.2rem 6rem 1fr;
+        }
+        .dir-row span:last-child {
           overflow-wrap: anywhere;
         }
       }
@@ -501,7 +513,7 @@
       .dir-listing {
         width: fit-content;
         margin: 0 auto;
-        font-size: 0.85rem;
+        font-size: clamp(0.85rem, 1.5vw, 1.05rem);
       }
 
       .dir-sep {
@@ -511,7 +523,7 @@
 
       .dir-row {
         display: grid;
-        grid-template-columns: 1.2rem 8rem auto;
+        grid-template-columns: 1.2rem clamp(8rem, 12vw, 10rem) auto;
         gap: 0 1.25rem;
         padding: 0.18rem 0;
         align-items: center;
