@@ -592,9 +592,7 @@
         transition: color 0.15s ease;
       }
 
-      .tmux-stack li:hover {
-        color: #ff9e64;
-      }
+      @media (hover: hover) { .tmux-stack li:hover { color: #ff9e64; } }
 
       .tmux-stack li::before {
         content: "▸";
