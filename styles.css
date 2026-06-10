@@ -145,22 +145,6 @@
         width: 100%;
       }
 
-      .section-label {
-        font-size: 0.8rem;
-        letter-spacing: 0.25em;
-        text-transform: uppercase;
-        color: var(--accent);
-        margin-bottom: 1.25rem;
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-      }
-
-      .section-label::before {
-        content: "##";
-        color: var(--accent);
-        font-weight: 400;
-      }
 
       /* ─── HERO ───────────────────────────────────────────────── */
       #hero {
@@ -263,9 +247,6 @@
         .hero-cta a {
           flex: 1;
           text-align: center;
-        }
-        .contact-entry {
-          overflow-wrap: anywhere;
         }
         .dir-listing {
           width: 100%;
@@ -823,108 +804,7 @@
         .projects-wrap { width: calc(100% - 2rem); margin: 0 1rem; flex: none; }
       }
 
-      .project-list {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .project-entry {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 0.6rem;
-        padding: 1.5rem 0;
-        border-top: 1px solid var(--border);
-      }
-
-      .project-entry:last-child {
-        border-bottom: 1px solid var(--border);
-      }
-
-      @media (min-width: 640px) {
-        .project-entry {
-          grid-template-columns: 5.5rem 9rem 1fr auto;
-          align-items: start;
-          gap: 1.75rem;
-        }
-      }
-
-      .project-thumb {
-        display: none;
-        width: 5.5rem;
-        height: 3.75rem;
-        object-fit: cover;
-        object-position: top center;
-        border: 1px solid var(--border);
-        filter: grayscale(1) brightness(0.55) contrast(1.1);
-        transition:
-          filter 0.35s ease,
-          border-color 0.35s ease;
-      }
-
-      @media (min-width: 640px) {
-        .project-thumb {
-          display: block;
-        }
-      }
-
-      .project-entry:hover .project-thumb {
-        filter: grayscale(0) brightness(0.85);
-        border-color: var(--accent-dim);
-      }
-
-      .project-name {
-        font-size: 0.95rem;
-        font-weight: 400;
-        color: var(--white);
-        letter-spacing: 0.04em;
-        white-space: nowrap;
-        padding-top: 0.15rem;
-      }
-
-      .project-name::before {
-        content: "→ ";
-        color: var(--accent);
-        font-weight: 300;
-      }
-
-      .project-desc {
-        font-size: 0.9rem;
-        font-weight: 300;
-        color: var(--text-2);
-        line-height: 1.6;
-      }
-
-      .project-links {
-        display: flex;
-        gap: 0.5rem;
-        flex-shrink: 0;
-      }
-
-      .project-links a {
-        font-size: 0.75rem;
-        letter-spacing: 0.1em;
-        color: var(--muted);
-        border: 1px solid var(--border);
-        padding: 0.2rem 0.5rem;
-        transition:
-          color 0.2s,
-          border-color 0.2s;
-      }
-
-      .project-links a:hover {
-        color: var(--accent);
-        border-color: var(--accent-dim);
-      }
-
       /* ─── CONTACT ────────────────────────────────────────────── */
-      .contact-note {
-        font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-        font-weight: 300;
-        color: var(--white);
-        margin-bottom: 2rem;
-        text-align: center;
-      }
-
       .dir-listing {
         width: fit-content;
         margin: 0 auto;
@@ -1094,12 +974,7 @@
           animation-range: entry 0% entry 30%;
         }
 
-        /* Project rows stagger naturally as each one enters view */
-        .project-entry {
-          animation: fade-up linear both;
-          animation-timeline: view();
-          animation-range: entry 0% entry 40%;
-        }
+
       }
 
       /* ─── MOBILE ─────────────────────────────────────────────── */
