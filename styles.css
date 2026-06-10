@@ -121,16 +121,21 @@
       }
 
       .nav-links a {
-        color: var(--text-2);
+        color: #bb9af7;
         font-size: 0.85rem;
         letter-spacing: 0.12em;
         text-transform: lowercase;
         transition: color 0.2s;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
       }
 
       .nav-links a:hover {
         color: #ff9e64;
       }
+
+      .nav-icon { display: none; }
 
       /* ─── SECTIONS ───────────────────────────────────────────── */
       section {
@@ -219,8 +224,12 @@
           flex-direction: column;
         }
         .nav-links {
-          gap: 1rem;
+          gap: 1.5rem;
         }
+        .nav-label { display: none; }
+        .nav-icon { display: block; width: 17px; height: 17px; }
+        .nav-links a::before { content: '['; }
+        .nav-links a::after { content: ']'; }
         .nav-inner {
           padding: 0.9rem 1rem;
         }
