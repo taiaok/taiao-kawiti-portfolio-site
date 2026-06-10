@@ -167,7 +167,7 @@
       </div>
     </section>
 
-    <div class="pacman-divider" data-above="about" data-below="projects" aria-hidden="true"><span class="pd-track"></span><span class="pd-bar"></span></div>
+    <div class="pacman-divider" data-above="about" data-below="projects" aria-hidden="true"><span class="pd-l"></span><span class="pd-m"></span><span class="pd-r"></span></div>
 
     <!-- ─── PROJECTS ──────────────────────────────────────────── -->
     <section id="projects">
@@ -251,7 +251,7 @@
       </div>
     </section>
 
-    <div class="pacman-divider" data-above="projects" data-below="contact" aria-hidden="true"><span class="pd-track"></span><span class="pd-bar"></span></div>
+    <div class="pacman-divider" data-above="projects" data-below="contact" aria-hidden="true"><span class="pd-l"></span><span class="pd-m"></span><span class="pd-r"></span></div>
 
     <!-- ─── CONTACT ───────────────────────────────────────────── -->
     <section id="contact">
@@ -538,18 +538,23 @@
 
       // ─── PACMAN DIVIDERS ──────────────────────────────────────
       (function () {
-        const TRACK = 22;
-        const BAR = 18;
-        const DOTS = new Set([2, 4, 5, 7, 10, 15, 20]);
+        const BAR = 24; // inner width between [ and ]
+        let ch = 0;
 
         function render(p, right) {
-          const pos = Math.round(p * (TRACK - 1));
-          let t = "";
-          for (let i = 0; i < TRACK; i++) {
-            t += i === pos ? (right ? "c" : "ɔ") : i > pos && DOTS.has(i) ? "o" : " ";
-          }
-          const f = Math.round(p * BAR);
-          return { t, b: "[" + "=".repeat(f) + "-".repeat(BAR - f) + "]" };
+          const pos = Math.round(p * (BAR - 1));
+          const remaining = BAR - pos - 1;
+          // Chomp: alternate open/closed mouth each scroll tick
+          const pac = right ? (ch % 2 ? "c" : "C") : (ch % 2 ? "c" : "ɔ");
+          // Dots fill ahead of pacman: ' o o o...' trimmed to remaining chars
+          const dots = remaining <= 0 ? "" :
+            remaining === 1 ? "o" :
+            (" o").repeat(Math.ceil(remaining / 2)).slice(0, remaining);
+          return {
+            l: "[" + "-".repeat(pos),
+            m: pac + dots,
+            r: "]",
+          };
         }
 
         const divs = [...document.querySelectorAll(".pacman-divider")];
@@ -557,15 +562,16 @@
 
         function tick() {
           const sy = window.scrollY;
-          if (sy !== prev) { right = sy > prev; prev = sy; }
+          if (sy !== prev) { right = sy > prev; prev = sy; ch++; }
           divs.forEach((d) => {
             const above = document.getElementById(d.dataset.above);
             const below = document.getElementById(d.dataset.below);
             if (!above || !below) return;
             const p = Math.max(0, Math.min(1, (sy - above.offsetTop) / (below.offsetTop - above.offsetTop)));
-            const { t, b } = render(p, right);
-            d.querySelector(".pd-track").textContent = t;
-            d.querySelector(".pd-bar").textContent = b;
+            const { l, m, r } = render(p, right);
+            d.querySelector(".pd-l").textContent = l;
+            d.querySelector(".pd-m").textContent = m;
+            d.querySelector(".pd-r").textContent = r;
           });
         }
 
