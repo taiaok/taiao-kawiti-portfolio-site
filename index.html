@@ -167,7 +167,7 @@
       </div>
     </section>
 
-    <div class="pacman-divider" data-above="about" data-below="projects" aria-hidden="true"><span class="pd-l"></span><span class="pd-m"></span><span class="pd-r"></span></div>
+    <div class="pacman-divider" data-above="about" data-below="projects" aria-hidden="true"><span class="pd-l"></span><span class="pd-m"></span><span class="pd-r">] </span><span class="pd-n"></span></div>
 
     <!-- ─── PROJECTS ──────────────────────────────────────────── -->
     <section id="projects">
@@ -251,7 +251,7 @@
       </div>
     </section>
 
-    <div class="pacman-divider" data-above="projects" data-below="contact" aria-hidden="true"><span class="pd-l"></span><span class="pd-m"></span><span class="pd-r"></span></div>
+    <div class="pacman-divider" data-above="projects" data-below="contact" aria-hidden="true"><span class="pd-l"></span><span class="pd-m"></span><span class="pd-r">] </span><span class="pd-n"></span></div>
 
     <!-- ─── CONTACT ───────────────────────────────────────────── -->
     <section id="contact">
@@ -550,11 +550,7 @@
           const dots = remaining <= 0 ? "" :
             remaining === 1 ? "o" :
             (" o").repeat(Math.ceil(remaining / 2)).slice(0, remaining);
-          return {
-            l: "[" + "-".repeat(pos),
-            m: pac + dots,
-            r: "]",
-          };
+          return { l: "[" + "-".repeat(pos), m: pac + dots };
         }
 
         const divs = [...document.querySelectorAll(".pacman-divider")];
@@ -568,10 +564,10 @@
             const below = document.getElementById(d.dataset.below);
             if (!above || !below) return;
             const p = Math.max(0, Math.min(1, (sy - above.offsetTop) / (below.offsetTop - above.offsetTop)));
-            const { l, m, r } = render(p, right);
+            const { l, m } = render(p, right);
             d.querySelector(".pd-l").textContent = l;
             d.querySelector(".pd-m").textContent = m;
-            d.querySelector(".pd-r").textContent = r;
+            d.querySelector(".pd-n").textContent = Math.round(p * 100);
           });
         }
 
