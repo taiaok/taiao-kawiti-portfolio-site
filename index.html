@@ -1334,9 +1334,12 @@
               delay += step;
             });
 
-            // Prompt and CTA snap in after last line
+            // Prompt snaps in, CTA fades in
             setTimeout(function () { heroPrompt.style.opacity = "1"; }, delay + 60);
-            setTimeout(function () { heroCta.style.opacity = "1"; }, delay + 120);
+            setTimeout(function () {
+              heroCta.style.transition = "opacity 0.5s ease";
+              heroCta.style.opacity = "1";
+            }, delay + 120);
           });
         }, 500);
       })();
