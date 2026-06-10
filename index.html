@@ -201,6 +201,9 @@
         #about > .container {
           zoom: 1.15;
         }
+        #projects > .container {
+          zoom: 1.15;
+        }
         .nav-inner {
           max-width: calc(1000px * 1.15);
         }
@@ -219,7 +222,10 @@
           flex-direction: column;
         }
         .nav-links {
-          gap: 1.25rem;
+          gap: 1rem;
+        }
+        .nav-inner {
+          padding: 0.9rem 1rem;
         }
         .neofetch {
           flex-direction: column;
@@ -276,7 +282,7 @@
         overflow: hidden;
         width: fit-content;
         margin: 0 auto;
-        background: var(--bg);
+        background: #0d0d14;
         animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
       }
 
@@ -478,12 +484,15 @@
       }
 
       .hero-cta a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
         font-size: 0.9rem;
         letter-spacing: 0.08em;
-        color: var(--text-2);
-        border: 1px solid var(--border);
+        color: #bb9af7;
+        border: 1px solid rgba(187, 154, 247, 0.3);
         border-radius: 3px;
-        padding: 0.6rem 1.5rem;
+        padding: 0.8rem 1.75rem;
         background: var(--bg);
         transition:
           color 0.2s,
@@ -494,6 +503,14 @@
       .hero-cta a:hover {
         color: #ff9e64;
         border-color: #7a3d1a;
+      }
+
+      .cta-icon { display: block; width: 15px; height: 15px; }
+
+      @media (max-width: 639px) {
+        .cta-label { display: none; }
+        .hero-cta a { padding: 1.5rem 1rem; justify-content: center; }
+        .cta-icon { width: 28px; height: 28px; }
       }
 
       @media (max-width: 639px) {
@@ -582,6 +599,135 @@
       }
 
       /* ─── PROJECTS ───────────────────────────────────────────── */
+      .projects-wrap {
+        width: 100%;
+      }
+
+      .projects-body {
+        padding: 0.6rem 1.5rem 1.25rem;
+      }
+
+      .git-cmd {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: var(--text-2);
+        margin-bottom: 1rem;
+        opacity: 0.22;
+      }
+
+      .git-cmd-ps1 {
+        color: var(--accent);
+        user-select: none;
+      }
+
+      .git-log {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+      }
+
+      .git-entry {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        padding-left: 1.25rem;
+        border-left: 1px solid var(--border);
+      }
+
+      .git-meta {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .git-anchor {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        border-top: 1px solid var(--border);
+        padding: 0.6rem 0;
+        margin-left: -1.25rem;
+        padding-left: 1.25rem;
+      }
+
+      .git-hash {
+        color: var(--text-2);
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+        opacity: 0.25;
+      }
+
+      .git-refs {
+        display: flex;
+        gap: 0.35rem;
+        flex-wrap: wrap;
+        flex: 1;
+      }
+
+      .git-ref {
+        font-size: 0.7rem;
+        padding: 0.05em 0.4em;
+        border-radius: 2px;
+        opacity: 0.7;
+      }
+
+      .git-links {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      .git-links a {
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        color: var(--text-2);
+        border: 1px solid var(--border);
+        padding: 0.15rem 0.45rem;
+        transition: color 0.2s, border-color 0.2s;
+      }
+
+      .git-links a:hover {
+        color: #ff9e64;
+        border-color: #7a3d1a;
+      }
+
+      .git-subject {
+        display: flex;
+        gap: 0.6rem;
+        align-items: baseline;
+        flex-wrap: wrap;
+      }
+
+      .git-name {
+        color: var(--white);
+        font-size: 0.95rem;
+        font-weight: 400;
+        transition: color 0.2s;
+      }
+
+      .git-name:hover { color: #ff9e64; }
+
+      .git-sep {
+        color: var(--muted);
+        font-weight: 300;
+      }
+
+      .git-desc {
+        color: var(--text);
+        font-size: 0.85rem;
+        font-weight: 300;
+      }
+
+      @media (max-width: 639px) {
+        .git-hash { display: none; }
+        #projects {
+          align-items: flex-start;
+          padding: 4rem 0 3rem;
+        }
+        #projects > .container { padding: 0; }
+        .projects-wrap { width: calc(100% - 2rem); margin: 0 1rem; flex: none; }
+      }
+
       .project-list {
         display: flex;
         flex-direction: column;
@@ -962,8 +1108,9 @@
           </div>
         </div>
         <div class="hero-cta">
-          <a href="#about" data-cmd="cat about.md">about</a>
-          <a href="#contact" data-cmd="ping taiao@kawiti">contact</a>
+          <a href="#about" data-cmd="cat about.md" aria-label="about"><svg class="cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg><span class="cta-label">about</span></a>
+          <a href="#projects" data-cmd="git log --oneline" aria-label="work"><svg class="cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><span class="cta-label">work</span></a>
+          <a href="#contact" data-cmd="ping taiao@kawiti" aria-label="contact"><svg class="cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="cta-label">contact</span></a>
         </div>
       </div>
     </section>
@@ -975,6 +1122,7 @@
         <a href="#hero" class="nav-brand">>_ tk</a>
         <ul class="nav-links">
           <li><a href="#about">[about]</a></li>
+          <li><a href="#projects">[work]</a></li>
           <li><a href="#contact">[contact]</a></li>
         </ul>
       </div>
@@ -1082,6 +1230,88 @@
     </div>
   </section>
   ─── end shelved projects ─────────────────────────────────── -->
+
+    <!-- ─── PROJECTS ──────────────────────────────────────────── -->
+    <section id="projects">
+      <div class="container">
+        <div class="animate-in">
+          <div class="hero-wrap projects-wrap">
+            <div class="term-bar">
+              <span class="term-dot"></span>
+              <span class="term-dot"></span>
+              <span class="term-dot"></span>
+              <span class="term-title">taiao@kawiti: ~/projects</span>
+            </div>
+            <div class="term-body projects-body">
+              <p class="git-cmd"><span class="git-cmd-ps1">~$</span> git log --oneline --all</p>
+              <div class="git-log">
+
+                <div class="git-entry">
+                  <div class="git-meta">
+                    <div class="git-anchor">
+                      <span class="git-hash">3f2a1b9</span>
+                      <div class="git-links">
+                        <a href="https://taiao-react-online-shop.onrender.com/" target="_blank" rel="noreferrer">live ↗</a>
+                      </div>
+                    </div>
+                    <div class="git-refs">
+                      <span class="git-ref" style="background:rgba(122,162,247,0.18);color:#7aa2f7">react</span>
+                      <span class="git-ref" style="background:rgba(187,154,247,0.18);color:#bb9af7">stripe</span>
+                    </div>
+                  </div>
+                  <div class="git-subject">
+                    <a class="git-name" href="https://taiao-react-online-shop.onrender.com/" target="_blank" rel="noreferrer">bionic boutique</a>
+                    <span class="git-sep">—</span>
+                    <span class="git-desc">e-commerce storefront with category filtering and Stripe checkout</span>
+                  </div>
+                </div>
+
+                <div class="git-entry">
+                  <div class="git-meta">
+                    <div class="git-anchor">
+                      <span class="git-hash">c8d4e7f</span>
+                      <div class="git-links">
+                        <a href="https://taiao-chatbot-project.onrender.com" target="_blank" rel="noreferrer">live ↗</a>
+                        <a href="https://github.com/taiaok/DI-Chatbot-project" target="_blank" rel="noreferrer">repo ↗</a>
+                      </div>
+                    </div>
+                    <div class="git-refs">
+                      <span class="git-ref" style="background:rgba(224,175,104,0.18);color:#e0af68">javascript</span>
+                    </div>
+                  </div>
+                  <div class="git-subject">
+                    <a class="git-name" href="https://taiao-chatbot-project.onrender.com" target="_blank" rel="noreferrer">chatbot</a>
+                    <span class="git-sep">—</span>
+                    <span class="git-desc">video game recommender with natural conversation flow</span>
+                  </div>
+                </div>
+
+                <div class="git-entry">
+                  <div class="git-meta">
+                    <div class="git-anchor">
+                      <span class="git-hash">b2190a3</span>
+                      <div class="git-links">
+                        <a href="https://taiaok.github.io/JS-Calculator/" target="_blank" rel="noreferrer">live ↗</a>
+                        <a href="https://github.com/taiaok/JS-Calculator" target="_blank" rel="noreferrer">repo ↗</a>
+                      </div>
+                    </div>
+                    <div class="git-refs">
+                      <span class="git-ref" style="background:rgba(224,175,104,0.18);color:#e0af68">javascript</span>
+                    </div>
+                  </div>
+                  <div class="git-subject">
+                    <a class="git-name" href="https://taiaok.github.io/JS-Calculator/" target="_blank" rel="noreferrer">js calculator</a>
+                    <span class="git-sep">—</span>
+                    <span class="git-desc">calculator with decimal support and DOM-driven sound effects</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ─── CONTACT ───────────────────────────────────────────── -->
     <section id="contact">
