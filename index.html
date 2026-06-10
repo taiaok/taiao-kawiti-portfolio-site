@@ -31,6 +31,21 @@
         list-style: none;
       }
 
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: repeating-linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2) 0px,
+          rgba(0, 0, 0, 0.2) 1px,
+          transparent 1px,
+          transparent 4px
+        );
+        pointer-events: none;
+        z-index: 9999;
+      }
+
       /* ─── TOKENS ─────────────────────────────────────────────── */
       :root {
         --bg: #07070d;
@@ -57,14 +72,7 @@
         color: var(--text);
         line-height: 1.7;
         font-size: 16px;
-        background-color: var(--bg);
-        background-image: repeating-linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 0.92) 0px,
-          rgba(0, 0, 0, 0.92) 1px,
-          transparent 1px,
-          transparent 4px
-        );
+        background: var(--bg);
       }
 
       .container {
