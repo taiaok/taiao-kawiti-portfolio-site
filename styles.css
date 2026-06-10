@@ -656,7 +656,7 @@
       }
 
       .tmux-tab:not(:first-child) {
-        clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 8px 100%);
+        clip-path: polygon(0 0, 8px 50%, 0 100%, calc(100% - 8px) 100%, 100% 50%, calc(100% - 8px) 0);
         padding-left: calc(0.5rem + 8px);
       }
 
