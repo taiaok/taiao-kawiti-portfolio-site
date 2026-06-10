@@ -649,7 +649,7 @@
         display: flex;
         align-items: center;
         clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%);
-        margin-right: -8px;
+        margin-right: -5px;
         position: relative;
         cursor: pointer;
         transition: background 0.15s ease, color 0.15s ease;
