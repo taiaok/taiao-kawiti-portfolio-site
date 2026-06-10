@@ -68,11 +68,10 @@
 
       body {
         font-family: var(--font);
-        background-color: var(--bg);
+        background: var(--bg);
         color: var(--text);
         line-height: 1.7;
         font-size: 16px;
-        background: var(--bg);
       }
 
       .container {
@@ -120,7 +119,6 @@
         border: 1px solid var(--border);
         border-radius: 3px;
         color: #7dcfff;
-        font-family: "JetBrains Mono", monospace;
         font-size: 0.65rem;
         font-weight: 500;
         letter-spacing: 0.03em;
@@ -210,7 +208,6 @@
 
       @media (max-width: 639px) {
         #hero {
-          align-items: flex-start;
           padding: 0;
           min-height: 100svh;
           height: 100svh;
@@ -242,12 +239,6 @@
           overflow: hidden;
           white-space: nowrap;
         }
-        .term-body {
-          padding: 0.5rem 1rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-        }
         .hero-cta {
           width: calc(100% - 2rem);
           margin-left: 1rem;
@@ -259,9 +250,6 @@
         }
         .activity-meta {
           display: inline;
-        }
-        .activity-sep {
-          display: none;
         }
         .contact-entry {
           overflow-wrap: anywhere;
@@ -417,7 +405,6 @@
 
       .neo-row {
         display: flex;
-        gap: 0;
         font-size: 0.85rem;
         line-height: 1.35;
       }
@@ -441,7 +428,6 @@
 
       .neo-colors {
         display: flex;
-        gap: 0;
         margin-top: 1.25rem;
       }
 
@@ -449,7 +435,6 @@
         display: inline-block;
         width: 1.4em;
         height: 1.2em;
-        border-radius: 0;
       }
 
       .term-intro-line {
@@ -472,7 +457,6 @@
         font-weight: 300;
         color: var(--text-2);
         margin-bottom: 0;
-        animation: none;
       }
 
       .cursor {
@@ -491,7 +475,6 @@
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 1.5rem;
-        animation: none;
       }
 
       .hero-cta a {
@@ -869,15 +852,6 @@
       @keyframes blink {
         50% {
           opacity: 0;
-        }
-      }
-
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
         }
       }
 
@@ -1382,6 +1356,12 @@
               });
             });
           });
+
+          new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting && typed.textContent) {
+              clear();
+            }
+          }, { threshold: 0.5 }).observe(document.getElementById("hero"));
         } else {
           btns.forEach(function (btn) {
             btn.addEventListener("mouseenter", function () {
