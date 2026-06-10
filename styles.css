@@ -502,7 +502,7 @@
         font-size: 0.9rem;
         letter-spacing: 0.08em;
         color: #bb9af7;
-        border: 1px solid rgba(187, 154, 247, 0.3);
+        border: 1px solid rgba(187, 154, 247, 0.18);
         border-radius: 3px;
         padding: 0.8rem 1.75rem;
         background: #0d0d14;
@@ -552,7 +552,7 @@
       }
 
       .tmux-pane {
-        border: 1px solid rgba(158, 206, 106, 0.3);
+        border: 1px solid rgba(158, 206, 106, 0.12);
         border-radius: 2px;
         position: relative;
         padding-top: 1.4rem;
@@ -571,35 +571,16 @@
         user-select: none;
       }
 
-      /* lined pane — about.md with line numbers */
+      /* lined pane — about.md */
       .tmux-lined {
-        padding: 0.5rem 0 0.85rem;
+        padding: 0.5rem 0.85rem 0.85rem;
       }
 
-      .editor-line {
-        display: flex;
-        align-items: flex-start;
-      }
-
-      .ln {
-        font-size: 0.75rem;
-        color: var(--text-2);
-        opacity: 0.28;
-        user-select: none;
-        min-width: 1rem;
-        text-align: right;
-        padding: 0 0.5rem;
-        line-height: 1.65;
-        flex-shrink: 0;
-      }
-
-      .ln-content {
+      .tmux-line {
         font-size: 0.88rem;
         font-weight: 300;
         color: var(--text);
         line-height: 1.65;
-        padding-right: 1rem;
-        flex: 1;
       }
 
       .tmux-pane-body {
@@ -1024,8 +1005,8 @@
       .activity-repo {
         color: #7dcfff;
         text-decoration: none;
-        background: rgba(125, 207, 255, 0.07);
-        border: 1px solid rgba(125, 207, 255, 0.2);
+        background: rgba(125, 207, 255, 0.04);
+        border: 1px solid rgba(125, 207, 255, 0.1);
         padding: 0.1em 0.4em;
         font-size: 0.88em;
         transition: background 0.2s, color 0.2s;
@@ -1046,7 +1027,8 @@
           align-items: flex-start;
         }
         .activity-gh-link {
-          margin-top: 0.2rem;
+          margin-top: 0.3rem;
+          top: 0;
         }
         .activity-body {
           display: block;
