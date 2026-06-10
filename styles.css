@@ -258,16 +258,6 @@
           text-align: center;
         }
         .apache-col-hide { display: none; }
-        .apache-dir { max-width: 100%; }
-        .apache-table { width: 100%; table-layout: fixed; }
-        .apache-table th:first-child,
-        .apache-table td:first-child { width: 45%; }
-        .apache-table td:last-child,
-        .apache-table th:last-child {
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-        }
       }
 
       .hero-wrap {
@@ -884,6 +874,19 @@
       @media (hover: hover) {
         .apache-row:not(.apache-row--parent):hover .apache-name { color: #ff9e64; }
         .apache-row:not(.apache-row--parent):hover .dir-icon { color: #ff9e64; }
+      }
+
+      @media (max-width: 639px) {
+        .apache-dir { width: 100%; max-width: 360px; }
+        .apache-table { width: 100%; table-layout: fixed; }
+        .apache-table th:first-child,
+        .apache-table td:first-child { width: 45%; }
+        .apache-desc {
+          display: block;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
       }
 
       /* ─── ACTIVITY BOX ──────────────────────────────────────── */
