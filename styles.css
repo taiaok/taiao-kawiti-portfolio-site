@@ -941,8 +941,8 @@
         user-select: none;
         line-height: 1;
       }
-      .pd-l, .pd-r { color: rgba(135, 223, 206, 0.35); }
-      .pd-m { color: #ff9e64; }
+      .pd-l, .pd-d, .pd-r { color: rgba(135, 223, 206, 0.65); }
+      .pd-p { color: #ff9e64; }
       .pd-n { color: var(--text-2); min-width: 3ch; display: inline-block; }
       @media (min-width: 640px) {
         .pacman-divider { font-size: 0.95rem; padding: 0.5rem 1rem; }
