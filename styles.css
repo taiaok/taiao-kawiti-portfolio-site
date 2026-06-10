@@ -141,7 +141,13 @@
       }
 
       #contact {
-        min-height: auto;
+        position: relative;
+      }
+      #contact > footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
       }
 
       section > .container {
