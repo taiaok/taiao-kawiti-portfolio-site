@@ -937,6 +937,7 @@
         white-space: pre;
         overflow: hidden;
         padding: 0.35rem 1rem;
+        text-align: center;
         user-select: none;
         line-height: 1;
       }
