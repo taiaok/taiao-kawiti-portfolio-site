@@ -839,6 +839,19 @@
       }
 
       /* ─── FOOTER ─────────────────────────────────────────────── */
+      .contact-snap {
+        scroll-snap-align: start;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #contact {
+        scroll-snap-align: none;
+        min-height: auto;
+        flex: 1;
+      }
+
       footer {
         border-top: 1px solid var(--border);
         padding: 2rem;
@@ -1084,6 +1097,7 @@
   ─── end shelved projects ─────────────────────────────────── -->
 
     <!-- ─── CONTACT ───────────────────────────────────────────── -->
+    <div class="contact-snap">
     <section id="contact">
       <div class="container">
         <div class="animate-in">
@@ -1198,6 +1212,7 @@
 
     <!-- ─── FOOTER ────────────────────────────────────────────── -->
     <footer>taiao kawiti &mdash; 2026</footer>
+    </div>
 
     <script>
       (function () {
