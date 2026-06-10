@@ -929,6 +929,20 @@
         animation: pulse-dot 2s ease-in-out infinite;
       }
 
+      /* ─── PACMAN DIVIDER ────────────────────────────────────── */
+      .pacman-divider {
+        font-family: var(--font);
+        font-size: 0.7rem;
+        letter-spacing: 0;
+        white-space: pre;
+        overflow: hidden;
+        padding: 0.35rem 1rem;
+        user-select: none;
+        line-height: 1;
+      }
+      .pd-track { color: #ff9e64; }
+      .pd-bar { color: rgba(135, 223, 206, 0.35); }
+
       /* ─── FOOTER ─────────────────────────────────────────────── */
       footer {
         border-top: 1px solid var(--border);

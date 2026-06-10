@@ -113,6 +113,8 @@
       </div>
     </nav>
 
+    <div class="pacman-divider" data-above="hero" data-below="about" aria-hidden="true"><span class="pd-track"></span><span class="pd-bar"></span></div>
+
     <!-- ─── ABOUT ─────────────────────────────────────────────── -->
     <section id="about">
       <div class="container">
@@ -166,6 +168,8 @@
         </div>
       </div>
     </section>
+
+    <div class="pacman-divider" data-above="about" data-below="projects" aria-hidden="true"><span class="pd-track"></span><span class="pd-bar"></span></div>
 
     <!-- ─── PROJECTS ──────────────────────────────────────────── -->
     <section id="projects">
@@ -248,6 +252,8 @@
         </div>
       </div>
     </section>
+
+    <div class="pacman-divider" data-above="projects" data-below="contact" aria-hidden="true"><span class="pd-track"></span><span class="pd-bar"></span></div>
 
     <!-- ─── CONTACT ───────────────────────────────────────────── -->
     <section id="contact">
@@ -530,6 +536,44 @@
             btn.addEventListener("mouseleave", clear);
           });
         }
+      })();
+
+      // ─── PACMAN DIVIDERS ──────────────────────────────────────
+      (function () {
+        const TRACK = 22;
+        const BAR = 18;
+        const DOTS = new Set([2, 4, 5, 7, 10, 15, 20]);
+
+        function render(p, right) {
+          const pos = Math.round(p * (TRACK - 1));
+          let t = "";
+          for (let i = 0; i < TRACK; i++) {
+            t += i === pos ? (right ? "c" : "ɔ") : i > pos && DOTS.has(i) ? "o" : " ";
+          }
+          const f = Math.round(p * BAR);
+          return { t, b: "[" + "=".repeat(f) + "-".repeat(BAR - f) + "]" };
+        }
+
+        const divs = [...document.querySelectorAll(".pacman-divider")];
+        let prev = window.scrollY, right = true;
+
+        function tick() {
+          const sy = window.scrollY;
+          if (sy !== prev) { right = sy > prev; prev = sy; }
+          divs.forEach((d) => {
+            const above = document.getElementById(d.dataset.above);
+            const below = document.getElementById(d.dataset.below);
+            if (!above || !below) return;
+            const p = Math.max(0, Math.min(1, (sy - above.offsetTop) / (below.offsetTop - above.offsetTop)));
+            const { t, b } = render(p, right);
+            d.querySelector(".pd-track").textContent = t;
+            d.querySelector(".pd-bar").textContent = b;
+          });
+        }
+
+        window.addEventListener("scroll", tick, { passive: true });
+        window.addEventListener("resize", tick);
+        tick();
       })();
     </script>
   </body>
