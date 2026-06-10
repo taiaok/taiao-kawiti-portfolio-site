@@ -33,15 +33,15 @@
 
       /* ─── TOKENS ─────────────────────────────────────────────── */
       :root {
-        --bg: #020d18;
-        --surface: #041526;
-        --border: #0d2840;
-        --text: #c8dce8;
-        --text-2: #7aaabb;
-        --muted: #3a5a70;
-        --accent: #4fd1c5;
-        --accent-dim: #1a5a56;
-        --white: #e4f0f6;
+        --bg: #07070d;
+        --surface: #14141b;
+        --border: #1e202e;
+        --text: #c0caf5;
+        --text-2: #9aa5ce;
+        --muted: #3b3e52;
+        --accent: #87dfce;
+        --accent-dim: #164846;
+        --white: #e0e4f8;
         --font: "JetBrains Mono", "Courier New", monospace;
       }
 
@@ -57,13 +57,14 @@
         color: var(--text);
         line-height: 1.7;
         font-size: 16px;
-        background-image: radial-gradient(
-          circle,
-          rgba(13, 40, 64, 0.9) 1px,
-          transparent 1px
+        background-color: var(--bg);
+        background-image: repeating-linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.22) 0px,
+          rgba(0, 0, 0, 0.22) 1px,
+          transparent 1px,
+          transparent 4px
         );
-        background-size: 32px 32px;
-        background-attachment: fixed;
       }
 
       .container {
@@ -87,7 +88,7 @@
           backdrop-filter 0.25s ease;
       }
       nav.is-stuck {
-        background: rgba(2, 13, 24, 0.88);
+        background: rgba(7, 7, 13, 0.92);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         border-bottom: 1px solid var(--border);
@@ -148,7 +149,7 @@
         font-size: 0.8rem;
         letter-spacing: 0.25em;
         text-transform: uppercase;
-        color: var(--text-2);
+        color: var(--accent);
         margin-bottom: 1.25rem;
         display: flex;
         align-items: center;
@@ -242,6 +243,7 @@
       }
 
       .hero-wrap {
+        --accent: #7dcfff;
         border: 1px solid var(--border);
         border-radius: 8px;
         overflow: hidden;
@@ -477,7 +479,7 @@
         font-size: 0.75rem;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-        color: var(--text-2);
+        color: var(--accent);
         margin-bottom: 1rem;
       }
 
@@ -496,8 +498,8 @@
       .stack-item {
         font-size: 0.9rem;
         font-weight: 300;
-        color: var(--accent);
-        border-left: 1px solid var(--accent-dim);
+        color: #9ece6a;
+        border-left: 1px solid #2a3f1a;
         padding-left: 0.75rem;
         letter-spacing: 0.05em;
         transition: padding-left 0.2s;
@@ -633,6 +635,10 @@
         transition: opacity 0.2s;
       }
 
+      .dir-row:not(.dir-cols) span:last-child {
+        color: #9ece6a;
+      }
+
       .dir-cols {
         color: var(--muted);
         font-size: 0.72rem;
@@ -646,6 +652,7 @@
       .dir-icon {
         display: flex;
         align-items: center;
+        color: #7dcfff;
       }
 
       .dir-name {
@@ -658,7 +665,7 @@
         border: 1px solid var(--border);
         border-radius: 8px;
         overflow: hidden;
-        background: rgba(4, 21, 38, 0.6);
+        background: #0c0c13;
         padding: 0 0 1rem;
         width: 100%;
         display: flex;
@@ -670,7 +677,7 @@
         font-size: 0.75rem;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-        color: var(--text-2);
+        color: var(--accent);
         display: flex;
         align-items: center;
         gap: 0.75rem;
@@ -703,7 +710,7 @@
       .activity-repo {
         color: var(--accent);
         text-decoration: none;
-        background: rgba(79, 209, 197, 0.07);
+        background: rgba(135, 223, 206, 0.07);
         border: 1px solid var(--accent-dim);
         padding: 0.1em 0.4em;
         font-size: 0.88em;
@@ -712,7 +719,7 @@
       }
 
       .activity-repo:hover {
-        background: rgba(79, 209, 197, 0.14);
+        background: rgba(135, 223, 206, 0.14);
       }
 
       .activity-time {
@@ -874,13 +881,13 @@
                   ><span class="neo-val">A cactus and 3 coffee cups</span>
                 </div>
                 <div class="neo-colors">
-                  <span style="background: #020d18; border: 1px solid #0d2840"></span>
-                  <span style="background: #1a5a56"></span>
-                  <span style="background: #3a5a70"></span>
-                  <span style="background: #7aaabb"></span>
-                  <span style="background: #c8dce8"></span>
-                  <span style="background: #4fd1c5"></span>
-                  <span style="background: #e4f0f6"></span>
+                  <span style="background: #f7768e"></span>
+                  <span style="background: #e0af68"></span>
+                  <span style="background: #9ece6a"></span>
+                  <span style="background: #7aa2f7"></span>
+                  <span style="background: #bb9af7"></span>
+                  <span style="background: #7dcfff"></span>
+                  <span style="background: #73daca"></span>
                 </div>
               </div>
             </div>
