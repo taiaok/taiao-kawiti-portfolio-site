@@ -257,18 +257,16 @@
           flex: 1;
           text-align: center;
         }
-        .dir-listing {
-          width: 100%;
-          font-size: 0.78rem;
-        }
-        .dir-row {
-          grid-template-columns: 1.2rem 6rem 1fr;
-        }
-        .dir-row span:last-child {
+        .apache-col-hide { display: none; }
+        .apache-dir { max-width: 100%; }
+        .apache-table { width: 100%; table-layout: fixed; }
+        .apache-table th:first-child,
+        .apache-table td:first-child { width: 45%; }
+        .apache-table td:last-child,
+        .apache-table th:last-child {
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
-          min-width: 0;
         }
       }
 
@@ -812,53 +810,80 @@
       }
 
       /* ─── CONTACT ────────────────────────────────────────────── */
-      .dir-listing {
+      .apache-dir {
+        font-family: var(--font);
+        font-size: 0.95rem;
+        padding: 0.5rem 0 1rem;
         width: fit-content;
         margin: 0 auto;
-        font-size: clamp(0.9rem, 2.5vw, 1.25rem);
-        padding: 0.75rem 0;
       }
 
-      .dir-sep {
-        border-top: 1px solid var(--muted);
-        margin: 0.75rem 0;
-      }
-
-      .dir-row {
-        display: grid;
-        grid-template-columns: 1.2rem clamp(8rem, 12vw, 10rem) auto;
-        gap: 0 1.25rem;
-        padding: 0.18rem 0;
-        align-items: center;
-        color: var(--text-2);
-        line-height: 1.55;
-        transition: opacity 0.2s;
-      }
-
-      .dir-row:not(.dir-cols) span:last-child {
+      .apache-title {
         color: #9ece6a;
+        font-size: 1.2rem;
+        margin: 0 0 0.35rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid var(--border);
       }
 
-      .dir-cols {
-        color: var(--muted);
-        font-size: 0.72rem;
-        pointer-events: none;
+      .apache-title-prefix {
+        color: rgba(213, 218, 248, 0.28);
       }
 
-      .dir-row:not(.dir-cols):hover,
-      .dir-row:not(.dir-cols):hover .dir-icon,
-      .dir-row:not(.dir-cols):hover span {
-        color: #ff9e64;
+      .apache-table {
+        border-collapse: collapse;
+        width: auto;
+      }
+
+      .apache-table th {
+        text-align: left;
+        padding: 0.2rem 1.2rem 0.2rem 0.5rem;
+        color: rgba(213, 218, 248, 0.28);
+        font-weight: 400;
+        border-bottom: 1px solid var(--border);
+        white-space: nowrap;
+      }
+
+      .apache-table th:first-child { padding-left: 0; }
+
+      .apache-table td {
+        padding: 0.22rem 1.2rem 0.22rem 0.5rem;
+        border-bottom: 1px solid var(--border);
+        white-space: nowrap;
+      }
+
+      .apache-table td:first-child { padding-left: 0; }
+
+      .apache-row--parent td { opacity: 0.3; }
+      .apache-row--parent a { color: var(--text); text-decoration: none; }
+
+      .apache-name {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        color: var(--accent);
+        text-decoration: none;
+        transition: color 0.15s;
+      }
+
+      .apache-meta {
+        color: rgba(213, 218, 248, 0.28);
+      }
+
+      .apache-meta--cv {
+        color: rgba(213, 218, 248, 0.38);
       }
 
       .dir-icon {
-        display: flex;
+        display: inline-flex;
         align-items: center;
         color: #7dcfff;
+        flex-shrink: 0;
       }
 
-      .dir-name {
-        color: var(--accent);
+      @media (hover: hover) {
+        .apache-row:not(.apache-row--parent):hover .apache-name { color: #ff9e64; }
+        .apache-row:not(.apache-row--parent):hover .dir-icon { color: #ff9e64; }
       }
 
       /* ─── ACTIVITY BOX ──────────────────────────────────────── */
