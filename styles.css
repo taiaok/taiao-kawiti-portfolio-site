@@ -976,9 +976,6 @@
 
       /* ─── ACTIVITY BOX ──────────────────────────────────────── */
       .activity-content {
-        display: flex;
-        align-items: center;
-        gap: 0.55rem;
         padding: 0.6rem 0.75rem 0.85rem 0.85rem;
       }
 
@@ -1023,13 +1020,6 @@
       }
 
       @media (max-width: 639px) {
-        .activity-content {
-          align-items: flex-start;
-        }
-        .activity-gh-link {
-          margin-top: 0.3rem;
-          top: 0;
-        }
         .activity-body {
           display: block;
         }
@@ -1049,12 +1039,13 @@
 
       .activity-gh-link {
         color: #42be65;
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        flex-shrink: 0;
+        vertical-align: middle;
         line-height: 0;
+        margin-right: 0.35rem;
         position: relative;
-        top: -1.9px;
+        top: -1px;
         animation: pulse-dot 2s ease-in-out infinite;
       }
 
