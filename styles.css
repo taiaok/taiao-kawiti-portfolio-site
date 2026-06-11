@@ -1134,7 +1134,8 @@
       }
 
       @media (max-width: 639px) {
-        .contact-wrap { width: 100%; max-width: 380px; }
+        #contact > .container { padding: 0; }
+        .contact-wrap { width: calc(100% - 2rem); margin: 0 1rem; max-width: none; }
       }
 
       /* ─── ACTIVITY BOX ──────────────────────────────────────── */
