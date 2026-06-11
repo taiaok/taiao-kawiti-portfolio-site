@@ -980,14 +980,14 @@
         letter-spacing: 0;
         white-space: pre;
         overflow: hidden;
-        padding: 0.35rem 1rem;
+        padding: 2rem 1rem;
         text-align: center;
         user-select: none;
         line-height: 1;
       }
       .pd-l, .pd-d, .pd-r { color: var(--text); }
       .pd-p { color: #ff9e64; }      @media (min-width: 640px) {
-        .pacman-divider { font-size: 0.95rem; padding: 0.5rem 1rem; }
+        .pacman-divider { font-size: 0.95rem; padding: 1.5rem 1rem; }
       }
 
       /* ─── FOOTER ─────────────────────────────────────────────── */
