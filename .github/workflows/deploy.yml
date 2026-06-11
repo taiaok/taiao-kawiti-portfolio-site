@@ -31,6 +31,7 @@ jobs:
           cp index.html _site/
           cp styles.css _site/
           cp CNAME _site/
+          cp -r gifs _site/
 
       - uses: actions/upload-pages-artifact@v3
         with:
