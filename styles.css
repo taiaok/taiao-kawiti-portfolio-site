@@ -808,94 +808,204 @@
         .projects-wrap { width: calc(100% - 2rem); margin: 0 1rem; flex: none; }
       }
 
-      /* ─── CONTACT ────────────────────────────────────────────── */
-      .apache-dir {
-        font-family: var(--font);
-        font-size: 0.95rem;
-        padding: 0.5rem 0 1rem;
+      /* ─── CONTACT / GEO ─────────────────────────────────────── */
+      .contact-wrap {
         width: fit-content;
         margin: 0 auto;
+        min-width: 300px;
+        max-width: 480px;
       }
 
-      .apache-title {
-        color: #9ece6a;
-        font-size: 1.2rem;
-        margin: 0 0 0.35rem;
-        padding-bottom: 0.3rem;
-        border-bottom: 1px solid var(--border);
+      .contact-geo-body {
+        padding: 0;
       }
 
-      .apache-title-prefix {
-        color: rgba(213, 218, 248, 0.28);
+      .geo-inner {
+        font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', cursive;
+        position: relative;
+        overflow: hidden;
+        background: radial-gradient(ellipse at 40% 55%, #1a1060 0%, #0a0830 50%, #020215 100%);
+        padding: 1.5rem 1.25rem 1.75rem;
+        text-align: center;
+        border: 3px dashed #ff00cc;
+        outline: 2px solid #ff00cc;
+        outline-offset: -6px;
       }
 
-      .apache-table {
-        border-collapse: collapse;
-        width: auto;
+      /* CSS starfield — two layers, offset twinkle phases */
+      .geo-inner::before,
+      .geo-inner::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 1px; height: 1px;
+        border-radius: 50%;
+        background: transparent;
       }
 
-      .apache-table th {
-        text-align: left;
-        padding: 0.2rem 1.2rem 0.2rem 0.5rem;
-        color: rgba(213, 218, 248, 0.28);
-        font-weight: 400;
-        border-bottom: 1px solid var(--border);
-        white-space: nowrap;
+      .geo-inner::before {
+        box-shadow:
+          18px 22px #fff, 45px 8px rgba(255,255,255,0.7), 78px 35px #fff,
+          112px 14px rgba(255,255,255,0.5), 134px 51px #fff, 160px 6px rgba(255,255,255,0.8),
+          195px 28px #fff, 220px 44px rgba(255,255,255,0.6), 248px 11px #fff,
+          275px 38px rgba(255,255,255,0.7), 310px 19px #fff, 340px 55px rgba(255,255,255,0.5),
+          370px 7px #fff, 395px 32px rgba(255,255,255,0.9), 420px 48px #fff,
+          22px 72px rgba(255,255,255,0.6), 60px 88px #fff, 95px 65px rgba(255,255,255,0.7),
+          130px 95px #fff, 165px 78px rgba(255,255,255,0.5), 200px 110px #fff,
+          235px 82px rgba(255,255,255,0.8), 265px 100px #fff, 295px 70px rgba(255,255,255,0.6),
+          325px 115px #fff, 355px 90px rgba(255,255,255,0.7), 385px 105px #fff,
+          410px 75px rgba(255,255,255,0.5), 35px 130px #fff, 70px 145px rgba(255,255,255,0.8),
+          108px 125px #fff, 145px 158px rgba(255,255,255,0.6), 180px 135px #fff,
+          215px 170px rgba(255,255,255,0.7), 250px 148px #fff, 285px 165px rgba(255,255,255,0.5),
+          315px 140px #fff, 348px 175px rgba(255,255,255,0.8), 380px 155px #fff,
+          10px 190px rgba(255,255,255,0.6), 48px 205px #fff, 88px 185px rgba(255,255,255,0.7),
+          125px 215px #fff, 162px 198px rgba(255,255,255,0.5), 198px 220px #fff,
+          232px 200px rgba(255,255,255,0.8), 268px 212px #fff, 302px 195px rgba(255,255,255,0.6),
+          336px 225px #fff, 368px 208px rgba(255,255,255,0.7), 400px 218px #fff;
+        animation: star-twinkle-a 4s ease-in-out infinite;
       }
 
-      .apache-table th:first-child { padding-left: 0; }
-
-      .apache-table td {
-        padding: 0.22rem 1.2rem 0.22rem 0.5rem;
-        border-bottom: 1px solid var(--border);
-        white-space: nowrap;
+      .geo-inner::after {
+        box-shadow:
+          30px 16px rgba(200,180,255,0.8), 62px 42px rgba(200,180,255,0.5), 92px 26px rgba(200,180,255,0.7),
+          122px 58px rgba(200,180,255,0.6), 150px 18px rgba(200,180,255,0.9), 178px 48px rgba(200,180,255,0.5),
+          208px 32px rgba(200,180,255,0.7), 240px 20px rgba(200,180,255,0.8), 268px 50px rgba(200,180,255,0.6),
+          298px 38px rgba(200,180,255,0.5), 330px 12px rgba(200,180,255,0.9), 360px 44px rgba(200,180,255,0.7),
+          388px 25px rgba(200,180,255,0.6), 415px 56px rgba(200,180,255,0.5),
+          42px 80px rgba(180,220,255,0.7), 76px 100px rgba(180,220,255,0.5), 110px 85px rgba(180,220,255,0.8),
+          148px 112px rgba(180,220,255,0.6), 185px 92px rgba(180,220,255,0.7), 222px 118px rgba(180,220,255,0.5),
+          258px 88px rgba(180,220,255,0.8), 290px 108px rgba(180,220,255,0.6), 322px 95px rgba(180,220,255,0.7),
+          354px 120px rgba(180,220,255,0.5), 390px 85px rgba(180,220,255,0.8),
+          16px 150px rgba(255,220,180,0.6), 55px 168px rgba(255,220,180,0.4), 95px 155px rgba(255,220,180,0.7),
+          136px 178px rgba(255,220,180,0.5), 175px 162px rgba(255,220,180,0.6), 212px 182px rgba(255,220,180,0.4),
+          250px 160px rgba(255,220,180,0.7), 286px 175px rgba(255,220,180,0.5), 320px 185px rgba(255,220,180,0.6),
+          358px 168px rgba(255,220,180,0.4), 394px 178px rgba(255,220,180,0.7),
+          25px 210px rgba(200,180,255,0.5), 65px 225px rgba(200,180,255,0.7), 105px 215px rgba(200,180,255,0.4),
+          145px 230px rgba(200,180,255,0.6), 185px 220px rgba(200,180,255,0.8), 225px 235px rgba(200,180,255,0.5),
+          262px 218px rgba(200,180,255,0.7), 298px 228px rgba(200,180,255,0.4), 335px 215px rgba(200,180,255,0.6),
+          372px 232px rgba(200,180,255,0.8), 408px 222px rgba(200,180,255,0.5);
+        animation: star-twinkle-b 5.5s ease-in-out infinite;
       }
 
-      .apache-table td:first-child { padding-left: 0; }
+      @keyframes star-twinkle-a {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
+      }
 
-      .apache-row--parent td { opacity: 0.3; }
-      .apache-row--parent a { color: var(--text); text-decoration: none; }
+      @keyframes star-twinkle-b {
+        0%, 100% { opacity: 0.6; }
+        30% { opacity: 1; }
+        70% { opacity: 0.2; }
+      }
 
-      .apache-name {
-        display: inline-flex;
+      .geo-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .geo-border {
+        font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', cursive;
+        color: #ff66dd;
+        font-size: 0.9rem;
+        margin: 0.25rem 0;
+        letter-spacing: 0.04em;
+      }
+
+      .geo-name {
+        font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', cursive;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ffe066;
+        margin: 0.65rem 0 0.25rem;
+        text-shadow: 0 0 8px #ffaa00, 0 0 18px rgba(255,180,0,0.5), 2px 2px 0 #aa6600;
+      }
+
+      .geo-est {
+        font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', cursive;
+        font-size: 0.8rem;
+        color: #aaddff;
+        margin: 0.15rem 0 0.65rem;
+      }
+
+      .geo-welcome {
+        font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', cursive;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ff66dd;
+        margin: 0.5rem 0 0.75rem;
+      }
+
+      .geo-links {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0.85rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
         align-items: center;
-        gap: 0.4rem;
-        color: var(--accent);
-        text-decoration: none;
-        transition: color 0.15s;
       }
 
-      .apache-meta {
-        color: rgba(213, 218, 248, 0.28);
+      .geo-links a {
+        font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', cursive;
+        font-size: 1rem;
+        color: #00ffff;
+        text-decoration: underline;
+        text-decoration-color: rgba(0,255,255,0.4);
+        transition: color 0.15s, text-shadow 0.15s;
       }
 
-      .apache-meta--cv {
-        color: rgba(213, 218, 248, 0.38);
+      .geo-links a:hover {
+        color: #88ffff;
+        text-shadow: 0 0 8px rgba(0,255,255,0.6);
       }
 
-      .dir-icon {
-        display: inline-flex;
-        align-items: center;
-        color: #7dcfff;
-        flex-shrink: 0;
+      .geo-btns {
+        display: flex;
+        gap: 0.6rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
       }
 
-      @media (hover: hover) {
-        .apache-row:not(.apache-row--parent):hover .apache-name { color: #ff9e64; }
-        .apache-row:not(.apache-row--parent):hover .dir-icon { color: #ff9e64; }
+      .geo-btn {
+        font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Sans', cursive;
+        font-size: 0.8rem;
+        background: #d4d0c8;
+        color: #111;
+        border: none;
+        box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #fff, inset -2px -2px 0 #404040, inset 2px 2px 0 #dfdfdf;
+        padding: 0.3rem 0.85rem;
+        cursor: pointer;
+      }
+
+      .geo-btn:active {
+        box-shadow: inset 1px 1px 0 #808080, inset -1px -1px 0 #fff, inset 2px 2px 0 #404040, inset -2px -2px 0 #dfdfdf;
+      }
+
+      .geo-sparkle {
+        display: inline-block;
+        animation: geo-twinkle 1.8s ease-in-out infinite;
+      }
+
+      .geo-sparkle--slow {
+        animation-name: geo-twinkle-slow;
+        animation-duration: 2.9s;
+      }
+
+      @keyframes geo-twinkle {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        40% { opacity: 0.2; transform: scale(0.85); }
+        70% { opacity: 0.9; transform: scale(1.1); }
+      }
+
+      @keyframes geo-twinkle-slow {
+        0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); }
+        30% { opacity: 0.3; transform: scale(0.8) rotate(15deg); }
+        65% { opacity: 0.85; transform: scale(1.15) rotate(-10deg); }
       }
 
       @media (max-width: 639px) {
-        .apache-dir { width: 100%; max-width: 360px; }
-        .apache-table { width: 100%; table-layout: fixed; }
-        .apache-table th:first-child,
-        .apache-table td:first-child { width: 45%; }
-        .apache-desc {
-          display: block;
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-        }
+        .contact-wrap { width: 100%; max-width: 380px; }
       }
 
       /* ─── ACTIVITY BOX ──────────────────────────────────────── */
@@ -980,14 +1090,14 @@
         letter-spacing: 0;
         white-space: pre;
         overflow: hidden;
-        padding: 2rem 1rem;
+        padding: 7rem 1rem 1rem;
         text-align: center;
         user-select: none;
         line-height: 1;
       }
       .pd-l, .pd-d, .pd-r { color: var(--text); }
       .pd-p { color: #ff9e64; }      @media (min-width: 640px) {
-        .pacman-divider { font-size: 0.95rem; padding: 1.5rem 1rem; }
+        .pacman-divider { font-size: 1.3rem; padding: 6rem 1rem 1.5rem; }
       }
 
       /* ─── FOOTER ─────────────────────────────────────────────── */
